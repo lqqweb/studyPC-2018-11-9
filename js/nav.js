@@ -1,0 +1,53 @@
+$(function(){
+	//顶部导航条跳转
+	// $(".firstPage").click(function(){
+	// 	window.location.href="#";
+	// 	$(this).addClass('selectedColor');
+	// 	$('.selectedCourse').removeClass('selectedColor');
+	// 	$(".onlineTest").removeClass('selectedColor');
+	// 	$(".studyMap").removeClass('selectedColor');
+	// 	$(".peraonalCenter").removeClass('selectedColor');
+	// })
+	// $(".selectedCourse").click(function(){
+	// 	window.location.href="#";
+	// 	$(this).addClass('selectedColor');
+	// 	$('.firstPage').removeClass('selectedColor');
+	// 	$(".onlineTest").removeClass('selectedColor');
+	// 	$(".studyMap").removeClass('selectedColor');
+	// 	$(".peraonalCenter").removeClass('selectedColor');
+	// })
+	// $(".onlineTest").click(function(){
+	// 	window.location.href="#";
+	// 	$(this).addClass('selectedColor');
+	// 	$('.firstPage').removeClass('selectedColor');
+	// 	$(".selectedCourse").removeClass('selectedColor');
+	// 	$(".studyMap").removeClass('selectedColor');
+	// 	$(".peraonalCenter").removeClass('selectedColor');
+	// })
+	// $(".courseContribute").click(function(){
+	// 	window.location.href="#";
+	// })
+	// $(".studyMap").click(function(){
+	// 	window.location.href="#";
+	// 	$(this).addClass('selectedColor');
+	// 	$('.selectedCourse').removeClass('selectedColor');
+	// 	$(".onlineTest").removeClass('selectedColor');
+	// 	$(".firstPage").removeClass('selectedColor');
+	// 	$(".peraonalCenter").removeClass('selectedColor');
+	// })
+	// $(".mobileLogin").click(function(){
+	// 	window.location.href="#";
+	// })
+	// $(".personalCenter").click(function(){
+	// 	window.location.href="#";
+	// 	$(this).addClass('selectedColor');
+	// 	$('.selectedCourse').removeClass('selectedColor');
+	// 	$(".onlineTest").removeClass('selectedColor');
+	// 	$(".firstPage").removeClass('selectedColor');
+	// 	$(".studyMap").removeClass('selectedColor');
+	// })
+
+	// $("li").click(function(){
+	// 	$(this).children().addClass('selectedColor').siblings().removeClass('selectedColor');
+	// })
+})

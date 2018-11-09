@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>分页</title>
+        <link rel="stylesheet" href="index.css" />
+        <script src="jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="pageBox">
+            <!-- <span> -->
+                <!--<a href="javascript:void(0);" title="首页">首页</a>
+                <a href="javascript:void(0);" title="上一页">上一页</a>
+                <a href="javascript:void(0);" title="第一页">1</a>-->
+              <!--   <span title="首页" class="disabled">首页</span>
+                <span title="上一页" class="disabled">上一页</span>
+                <span title="第一页" class="curr">1</span>
+                <a href="javascript:void(0);" title="第二页">2</a>
+                <a href="javascript:void(0);" title="第三页">3</a>
+                <a href="javascript:void(0);" title="第四页">4</a>
+                <a href="javascript:void(0);" title="第五页">5</a>
+                <a href="javascript:void(0);" title="第六页">6</a>
+                <span>...</span>
+                <a href="javascript:void(0);" title="下一页">下一页</a>
+                <a href="javascript:void(0);" title="尾页">尾页</a>
+            </span> -->
+           <!--  <span>
+                当前第 <span class="colorRed">1</span> 页/共<span>6</span>页
+                转到第<input type="text" value="" class="gopage"/>页
+            </span> -->
+             <span class="pageSpan"></span>
+        </div>
+        <script src="index.js"></script>
+        <script>
+            $(function() {
+                //分页
+                $(".pageSpan").createPage({
+                    pageIndex:5,
+                    totalPage:9,
+                    backFn:function(pageIndex){
+                        console.log(pageIndex);
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

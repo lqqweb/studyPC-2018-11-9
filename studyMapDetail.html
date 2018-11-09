@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />  
+	<title>查看课程</title>
+	<link rel="stylesheet" href="css/studyMapDetail.css">
+	<link rel="stylesheet" href="css/bootstrap-3.3.7/dist/css/bootstrap.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/studyMapDetail.js"></script>
+	<script src="js/search.js"></script>
+</head>
+<body>
+	<!-- 顶部导航条、 -->
+	<div class="navs">
+		<div class="selectedDiv">
+			<div class="logoImgHidden">
+				<img src="images/logo_01.png" alt="">
+			</div>
+			<div class="selectedLi">
+				<ul>
+					<li  ><a href="index.html" class="firstPage ">首页</a></li>
+					<li ><a href="newPeople.html" class="newPeople">新员工培训</a></li>
+					<li ><a href="newPublicCourse.html" class="newPublicCourse">最新课程</a></li>
+					<li ><a href="mySelectedCourse.html" class="selectedCourse">已选课程</a></li>
+					<li ><a href="onlineTest.html" class="onlineTest ">在线考试</a></li>
+					<!-- <li class="courseContribute">课程投稿</li> -->
+					<li ><a href="studyMap.html" class="studyMap selectedColor">学习地图</a></li>
+					<!-- <li class="moblieLogin">移动端登录</li> -->
+					<li ><a href="personalCenter.html" class="personalCenter">个人中心</a></li>
+					<li>
+						<a href="OperationalData.html" class="OperationalData">运营数据</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="loginerInfoHidden">
+					<div class="searchImg">
+						<!-- <img src="images/search.png" alt=""> -->
+						<button type="button" class="btn btn-search btn-success">
+						  <span class="glyphicon glyphicon-search" aria-hidden="true"></span> 搜索
+						</button>
+					</div>
+					<div class="bellHidden">
+						<img class="bellHiddenImg" src="images/bell.png" alt="">
+						<img class="starts" src="images/start.png" alt="">
+					</div>
+					<div class="loginerHiddenImg">
+						<img src="images/header.jpg" alt="">
+					</div>
+					<div class="loginerHiddenName">
+						<p>张三</p>
+						<p>JH015222</p>
+					</div>
+				</div>
+		</div>
+
+			<!-- 搜索框，不在页面显示，当点击搜索图标时，显示搜索框，且搜索图标隐藏-->
+		<div class="navSearch_hidden">
+			<div class="selectedDiv_block">
+				<div class="logoImgHidden">
+					<img src="images/logo_01.png" alt="">
+				</div>
+				<div class="selectedInput">
+					<input type="text" placeholder="请输入想要搜索的课程名或所属分类名称">
+						<button type="button" class="btn btn-success">
+						  <span class="glyphicon glyphicon-search" aria-hidden="true"></span> 搜索
+						</button>
+				</div>
+
+				<div class="loginerInfoHidden">
+						<div class="searchImgHidden">
+							<img src="images/search.png" alt="">
+						</div>
+						<div class="bellHidden">
+							<img class="bellHiddenImg" src="images/bell.png" alt="">
+							<img class="starts" src="images/start.png" alt="">
+						</div>
+						<div class="loginerHiddenImg">
+							<img src="images/header.jpg" alt="">
+						</div>
+						<div class="loginerHiddenName">
+							<p>张三</p>
+							<p>JH015222</p>
+						</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<!-- 内容部分 -->
+	<div class="bodyContent">
+		<div class="content">
+			<!-- 嘉华在线学院-->
+			<div class="contentTopBg">
+				<img src="images/studyMap/bg.png" alt="">
+				<!-- <img src="images/onlineTest/onlineTest.png" alt=""> -->
+			</div>
+			<!-- 各个梯队学习地图情况-->
+			<div class="studyMapContent">
+				<div class="studyMapTitle"><b>四级梯队学习地图</b></div>
+				
+				<div class="studyMapStageContent">
+					<div class="studyMapStageDetail">
+						<!-- 1阶段 -->
+						<div class="contentItems_1">
+							<div class="contentItemsList_1">
+								<p class="stage_1">1阶段课程</p>
+							</div>
+							<div class="arrow_1"></div>
+						</div>
+						<!-- 剩余阶段 -->
+						<div class="otherStages">
+							<img src="images/studyMap/line.png" alt="">
+							<div class="contentItems">
+								<div class="contentItemsList_2">
+									<p class="stage_2">2阶段课程</p>
+								</div>
+								<div class="arrow_2"></div>
+							</div>
+						</div>
+
+						<div class="otherStages">
+							<img src="images/studyMap/line.png" alt="">
+							<div class="contentItems">
+								<div class="contentItemsList_2">
+									<p class="stage_2">2阶段课程</p>
+								</div>
+								<div class="arrow_2"></div>
+							</div>
+						</div>
+
+
+						<div class="otherStages">
+							<img src="images/studyMap/line.png" alt="">
+							<div class="contentItems">
+								<div class="contentItemsList_2">
+									<p class="stage_2">2阶段课程</p>
+								</div>
+								<div class="arrow_2"></div>
+							</div>
+						</div>
+
+						<div class="otherStages">
+							<img src="images/studyMap/line.png" alt="">
+							<div class="contentItems">
+								<div class="contentItemsList_2">
+									<p class="stage_2">2阶段课程</p>
+								</div>
+								<div class="arrow_2"></div>
+							</div>
+						</div>
+
+						<!-- <div class="otherStages">
+							<img src="images/studyMap/line.png" alt="">
+							<div class="contentItems">
+								<div class="contentItemsList_2">
+									<p class="stage_2">2阶段课程</p>
+								</div>
+								<div class="arrow_2"></div>
+							</div>
+						</div>
+
+						<div class="otherStages">
+							<img src="images/studyMap/line.png" alt="">
+							<div class="contentItems">
+								<div class="contentItemsList_2">
+									<p class="stage_2">2阶段课程</p>
+								</div>
+								<div class="arrow_2"></div>
+							</div>
+						</div>
+	 -->
+
+
+
+
+
+
+					</div>
+
+				</div>
+
+				<!-- 每个梯队的详细课程内容 -->
+				<div class="studyMapCourse">
+					<table class="tb" border="1" bordercolor="#d9e8f8">
+						<tr align="center">
+							<td class="tb_Name">课程名称</td>
+							<td class="tb_status">完成情况</td>
+						</tr>
+						<tr>
+							<td style="color:#3890da">&nbsp;&nbsp;物联网</td>
+							<td class="tb_1">完成</td>
+						</tr>
+						<tr>
+							<td style="color:#3890da">&nbsp;&nbsp;物联网1</td>
+							<td class="tb_2">完成</td>
+						</tr>
+						<tr>
+							<td style="color:#3890da">&nbsp;&nbsp;物联网2</td>
+							<td class="tb_3">完成</td>
+						</tr>
+						<tr>
+							<td style="color:#3890da">&nbsp;&nbsp;物联网3</td>
+							<td class="tb_4">完成</td>
+						</tr>
+					</table>
+
+					<div class="nextStage">下一阶段</div>
+				</div>
+				
+
+
+
+			</div>
+		</div>
+		
+	</div>
+
+</body>
+</html>

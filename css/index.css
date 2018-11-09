@@ -1,0 +1,478 @@
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	width:100%;
+	height:100%;
+    /* min-width: 1440px; */
+}
+/* 当鼠标滑到课程分类时，显示此导航条，否则隐藏 */
+.nav_hidden{
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:10;
+	width:100%;
+	min-width: 1010px;
+}
+.selectedDiv{
+	display:block;
+	/*width:1440px;*/
+	height:90px;
+	 /*border:1px solid red;*/ 
+	box-shadow: 2px 2px 10px darkgrey;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:nowrap;
+	align-items:center;
+	background-color:white;
+}
+.logoImgHidden{
+	/*border:1px solid blue;*/
+	width: 127px;
+	height: 51px;
+}
+.selectedLi{
+	display:block;
+	/*border:1px solid blue;*/
+	width: 730px;
+	height: 20px;
+}
+
+.selectedLi ul{
+	margin-bottom:-5px;
+	width: 730px;
+}
+.selectedLi ul li{
+	list-style:none;
+	display:inline-block;
+	margin-right: 2.3%;
+    margin-left: 2.3%;
+}
+ul li a{
+	color:black;
+	text-decoration: none !important;
+}
+ul li a:hover{
+	color:black;
+	text-decoration: none;
+}
+.selectedColor{
+	color:#3799ec !important;
+	border-bottom:2px solid #3799ec;
+}
+
+.btn{
+	border-radius:0 4px 4px 0 !important;
+	margin-left:-4px;
+	margin-top:-3px;
+	outline:none;
+}
+.loginerInfoHidden{
+	width:265px;
+	height:53px;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:nowrap;
+	align-items:center;
+	margin-right:10px;
+	/*border:1px solid blue;*/
+}
+.searchImg img{
+	width:20px;
+	height:20px;
+	display:inline-block;
+}
+.btn-search{
+	border-radius:4px !important;
+	padding:3px 6px;
+}
+.btn-success{
+	color: #fff;
+    background-color: #73d25a !important;
+    border-color: #73d25a !important;
+}
+.bellHidden{
+	border-left:1px solid #cccccc;
+	padding-left:6px;
+	border-right:1px solid #cccccc;
+	padding-right:8px;
+}
+ .bellHiddenImg{
+	width:20px;
+	height:20px;
+	display:inline-block;
+}
+ .starts{
+	width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.loginerHiddenImg img{
+	width:40px;
+	height:40px;
+	border-radius:40px;
+}
+.loginerHiddenName p{
+	margin:0 0 1px;
+}
+
+
+/* 搜索框，不在页面显示，当点击搜索图标时，
+显示搜索框，且搜索图标隐藏 */
+.navSearch_hidden{
+	display:none;
+
+}
+.selectedDiv_block{
+	/*width:1440px;*/
+	height:90px;
+	 /*border:1px solid red;*/ 
+	box-shadow: 2px 2px 10px darkgrey;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:nowrap;
+	align-items:center;
+	background-color:white;
+}
+.selectedInput{
+	display:block;
+	/*border:1px solid blue;*/
+	width: 730px;
+	/* height: 20px; */
+	text-align:center;
+}
+.selectedInput input{
+	width: 560px;
+	height: 34px;
+	outline:none;
+}
+.searchImgHidden{
+	width: 56px;
+	height: 21px;
+}
+.searchImgHidden img{
+	width:20px;
+	height:20px;
+	display:inline-block;
+	display: none;
+}
+
+
+
+/* 首页,且其整体内容占浏览器的80%宽*/
+.bodyContent{
+	width:100%;
+}
+.content{
+	width:1152px;
+	margin:0 auto;
+	/* border:1px solid blue; */
+}
+/* 顶部logo */
+.top{
+	height:125px;
+	display:flex;
+	justify-content:flex-start;
+	flex-wrap:nowrap;
+	align-items:center;
+}
+.logo{
+	margin:0 auto;
+	margin-left:43%;
+}
+.administrator{
+	margin-right: 80px;
+    margin-top: 70px;
+}
+.loginerInfo{
+	width:205px;
+	height:53px;
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:nowrap;
+	align-items:center;
+	margin-right:10px;
+}
+.bell{
+	border-right:1px solid #cccccc;
+	padding-right:10px;
+}
+.bell .bellImg{
+	width:20px;
+	height:20px;
+	display:inline-block;
+}
+.bell .starts{
+	width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.loginerImg img{
+	width:50px;
+	height:50px;
+	border-radius:50px;
+}
+.loginerName p{
+	margin:0 0 2px;
+}
+/* 右侧和底部的边框带有发光色 */
+.contentBorder{
+	width:100%;
+	margin:0 auto;
+	border:1px solid transparent;
+	box-shadow: 2px 2px 10px gray;
+
+	position:relative;
+}
+/* 最右侧向下箭头 */
+.downImg{
+	position:absolute;
+	top:500px;
+	right:-100px;
+}
+.downImg img{
+	width:40px;
+	height:40px;
+}
+
+
+/* 导航条 */
+.navs{
+	width:80%;
+	height:80px;
+	margin:0 auto;
+	/* border:1px solid red; */
+}
+.navs ul li{
+	list-style: none;
+    display: inline-block;
+    margin-left: 5.2%;
+    margin-top: 30px;
+}
+
+.selectedColor{
+	color:#3799ec;
+	border-bottom:2px solid #3799ec;
+}
+/* 搜索框 */
+.search{
+	/*width:80%;*/
+	margin-left:16.5%;
+}
+.search input{
+	width: 70%;
+    height: 34px;
+
+}
+.btn{
+	border-radius: 0 4px 4px 0;
+    margin-left: -4px;
+    margin-top: -3px;
+     outline:none;
+}
+input{
+	outline:none;
+	border:1px solid #e6e6e6;
+}
+
+/* 搜索框下面的字 */
+.searchHosity{
+	display:flex;
+	justify-content:flex-start;
+	flex-wrap:nowrap;
+	align-items:center;
+	margin-left: 16.5%;
+	margin-bottom:10px;
+}
+.searchHosity p{
+	margin-right:10px;
+	margin-top:5px;
+	font-size:10px;
+}
+/* 轮播图 */
+.swiperImg{
+	margin-bottom:30px;
+}
+.swiper-container {
+        width: 1100px;
+        height: 400px;
+      
+    }
+ .swiper-slide {
+ 		width: 100%;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+ }
+
+.swiper-slide img{
+		width: 1100px;
+		height: 400px;
+
+}
+
+/* 课程分类 */
+.middleContent{
+	position:relative;
+}
+/* 最右边箭头图片 */
+.addUpDownImg{
+	position:absolute;
+	top:269px;
+	right:-100px;
+}
+.addUpDownImg a{
+	margin-bottom:15px;
+	display:inherit;
+}
+.addUpDownImg img{
+	width:40px;
+	height:40px;
+}
+/* 专业课程 */
+.courseType{
+	text-align:center;
+	margin-top:120px;
+	margin-bottom: 20px;
+}
+
+
+.professionalCourse{
+	margin-top:30px;
+	width:80%;
+	/* border:1px solid red; */
+	margin:0 auto;
+}
+.courseTypeContent{
+	font-size: 20px;
+    color: #419fed;
+    margin: 0 0 20px 30px;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+.courseDetail{
+	display:flex;
+	justify-content:flex-start;
+	flex-wrap:wrap;
+	align-items:center;
+}
+.courseItem1{
+	margin-bottom: 35px;
+    margin-left: 60px;
+}
+.courseItem1 a{
+	text-decoration:none;
+	color:black;
+}
+.courseImg img{
+	width:60px;
+	height:60px;
+}
+.courseContent{
+	margin-top:15px;
+}
+
+/* 最新发布 */
+.newPublic{
+	width: 1152px;
+    padding-top: 50px;
+    padding-bottom:40px;
+    margin: 0 auto;
+    text-align: center;
+}
+.newPublicContent{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top:40px;
+    width: 1152px;
+}
+.newPublicContentItems1{
+	width: 200px;
+    height: 180px;
+    margin-bottom: 45px;
+    margin-right: 13px;
+    margin-left: 16px;
+}
+
+.newPublicContentImg img{
+	width: 200px;
+    height: 110px;
+
+}
+.newPublicContentTitle{
+	margin-top:10px;
+	font-size:15px;
+	/* width: 170px; */
+    /* height: 33px; */
+    /* border: 1px solid red; */
+}
+.newPublicDetail{
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+	font-size:12px;
+	margin-top:10px;
+}
+.newPublicDetailImg img{
+	width: 13px;
+	height: 13px;
+	vertical-align:text-top;
+}
+.newPublicDetailImg span{
+	color:#419fed;
+	font-size:12px;
+}
+.newPublicCourseName{
+	border-left: 1px solid #999999;
+    margin-left: 10px;
+    padding-left: 10px;
+    line-height: 12px;
+    color:#999999;
+    font-size:12px;
+}
+
+.newPublicContentTitle a{
+	text-decoration:none;
+	color:black;
+}
+/* 最新课程信息提示 */
+.infoTip{
+	font-size:15px;
+  /* border: 1px solid red; */
+    width: 300px;
+    /* height:200px; */
+    position: fixed;
+    right: 20px;
+    bottom: 0px;
+    z-index:9999;
+    /* background: #73d25a; */
+    background:#3799ec;
+    color: white;
+    border-radius:10px;
+    padding:10px 20px;
+    display:block;
+}
+.close{
+	text-align:right;
+}

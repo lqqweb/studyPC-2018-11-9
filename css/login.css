@@ -1,0 +1,135 @@
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	width:100%;
+	height:100%;
+    min-width: 1440px;
+  
+}
+/* 顶部logo */
+.top{
+	height:80px;
+	/* border:1px solid blue; */
+}
+.top img{
+	margin-left: 20%;
+    margin-top: 18px;
+}
+/* 中间蓝色内容 */
+.bg{
+	height:450px;
+	background-image:url('../images/login/bg.png');
+}
+
+.content{
+	padding-top: 40px;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+/* 图片 */
+.bgImgs img{
+	width:350px;
+	height:345px;
+}
+/* 登录框 */
+.loginContent{
+	width:235px;
+	height:290px;
+	/* border:1px solid blue; */
+	border-radius:5px;
+	background-color:white;
+}
+.loginContent p{
+	color:#368ae3;
+	text-align: center;
+    margin: 20px 0 20px 0px;
+}
+.userInfo,.pwdInfo{
+	position:relative;
+}
+.userImg,.pwdImg{
+	position:absolute;
+	top:7px;
+	left:185px;
+}
+span{
+	height:10px;
+	font-size:10px;
+	display:block;
+}
+.form-group{
+	margin-bottom:8px !important;
+}
+
+.checkbox{
+	padding-top:0px !important;
+	width:200px;
+}
+
+
+.btn{
+	width:100%;
+}
+
+.someDetail{
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:nowrap;
+	align-items:center;
+	margin:0 20px;
+}
+.someDetail a{
+	text-decoration:none;
+}
+.fogoterCode{
+	color:#a1a1a1;
+}
+.submitNew{
+	color:red;
+}
+
+/* 公司信息 */
+.companyInfo{
+	/* margin-top: 2%; */
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+.companyInfo p{
+	font-size:12px;
+}
+h5{
+	display:inline-block;
+	font-weight:700;
+}
+.info-4 img{
+	vertical-align:text-top;
+	    display: inline-block;
+} 
+/* 底部蓝色部分 */
+.bottoms{
+	text-align: center;
+    /* margin-top: 4%; */
+    padding-top: 15px;
+    width:100%;
+    height: 50px;
+    color: #368ae2;
+    background-color: #ebf4f9;
+}
+@media screen and (max-height: 1024px){
+	.companyInfo{margin-top:5%;}
+	.bottoms{margin-top:8%;}
+}
+@media screen and (max-height: 800px){
+	.companyInfo{margin-top: 2%;}
+	.bottoms{margin-top:4%;}
+}

@@ -1,0 +1,986 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+body{
+	width:100%;
+	height:100%;
+	/* min-width:1440px; */
+}
+/* 顶部导航条 */
+.navs{
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:11;
+	width:100%;
+	min-width:1010px;
+}
+.selectedDiv{
+	display:block;
+	/*width:1440px;*/
+	height:90px;
+	 /* border:1px solid red;  */
+	box-shadow: 2px 2px 10px darkgrey;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:nowrap;
+	align-items:center;
+	background-color:white;
+}
+.logoImgHidden{
+	/* border:1px solid blue; */
+	width: 127px;
+	height: 51px;
+}
+.selectedLi{
+	display:block;
+	/* border:1px solid blue; */
+	width: 730px;
+	height: 20px;
+}
+
+.selectedLi ul{
+	margin-bottom:-5px;
+	width: 730px;
+}
+.selectedLi ul li{
+	list-style:none;
+	display:inline-block;
+	margin-right:2.3%;
+	margin-left: 2.3%;
+	font-size:14px;
+}
+ul li a{
+	color:black;
+	text-decoration: none !important;
+}
+ul li a:hover{
+	color:black;
+	text-decoration: none;
+}
+.selectedColor{
+	color:#3799ec !important;
+	border-bottom:2px solid #3799ec;
+}
+.btn{
+	border-radius:0 4px 4px 0 !important;
+	margin-left:-4px;
+	margin-top:-3px;
+	outline:none;
+}
+.loginerInfoHidden{
+	width:265px;
+	height:53px;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:nowrap;
+	align-items:center;
+	margin-right:10px;
+	/* border:1px solid blue; */
+}
+.searchImg img{
+	width:20px;
+	height:20px;
+	display:inline-block;
+}
+.btn-search{
+	border-radius:4px !important;
+	padding:3px 6px !important;
+}
+.btn-success{
+	color: #fff;
+    background-color: #73d25a !important;
+    border-color: #73d25a !important;
+}
+.bellHidden{
+	border-left:1px solid #cccccc;
+	padding-left:6px;
+	border-right:1px solid #cccccc;
+	padding-right:8px;
+}
+ .bellHiddenImg{
+	width:20px;
+	height:20px;
+	display:inline-block;
+}
+ .starts{
+	width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.loginerHiddenImg img{
+	width:40px;
+	height:40px;
+	border-radius:40px;
+}
+.loginerHiddenName p{
+	margin:0 0 1px;
+	font-size:14px;
+}
+
+/* 搜索框，不在页面显示，当点击搜索图标时，
+显示搜索框，且搜索图标隐藏 */
+.navSearch_hidden{
+	display:none;
+
+}
+.selectedDiv_block{
+	/*width:1440px;*/
+	height:90px;
+	 /*border:1px solid red;*/ 
+	box-shadow: 2px 2px 10px darkgrey;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:nowrap;
+	align-items:center;
+	background-color:white;
+}
+.selectedInput{
+	display:block;
+	/*border:1px solid blue;*/
+	width: 730px;
+	/* height: 20px; */
+	text-align:center;
+}
+.selectedInput input{
+	width: 560px;
+	height: 34px;
+	outline:none;
+}
+.searchImgHidden{
+	width: 56px;
+	height: 21px;
+}
+.searchImgHidden img{
+	width:20px;
+	height:20px;
+	display:inline-block;
+	display: none;
+}
+/* 内容部分 */
+.bodyContent{
+	width:100%;
+}
+.content{
+	width:1152px;
+	margin:0 auto;
+	/* margin-top:120px; */
+	padding-top:120px;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:nowrap;
+	/* align-items:center; */
+}
+/* 左边个人信息 */
+.personalInfo{
+	width:200px;
+}
+.infoBg{
+	color:white;
+}
+.bgImg{
+	z-index:-10;
+	width:200px;
+	height:230px;
+}
+.personalImg{
+	width: 81px;
+    height: 81px;
+    border-radius: 50px;
+    background-color: #99c7ff;
+    position: relative;
+    margin-top: -190px;
+    margin-left: 57px;
+}
+.personalImg img{
+	width:75px;
+	height:75px;
+	border-radius:50px;
+	/* position:absolute;
+	top:3px;
+	left:3px; */
+	margin-top: 3px;
+    margin-left: 3px;
+}
+.personalImg p{
+	width: 70px;
+    height: 22px;
+    text-align: center;
+    background-color: #fcb404;
+    position: absolute;
+    top: 66px;
+    left: 5px;
+    padding: 2px 5px;
+}
+.personalInfoItem{
+	margin-top:20px;
+	margin-left:35px;
+}
+.personalName{
+	font-size:16px;
+	display:inline-block;
+}
+.personalNum{
+	font-size:18px;
+	display:inline-block;
+}
+.personalJob{
+	margin-left: 35px;
+    margin-top: -5px;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+.personalStatus{
+	margin-top: 60px;
+	margin-left:20px;
+}
+
+.studyStatusLine,.safeSet,.myInfoDetail{
+	border-bottom: 1px solid #e6e6e6;
+    width: 160px;
+}
+.studyStatus,.safeStatus,.myMessage{
+	border-left: 2px solid #419fed;
+    line-height: 14px;
+    padding-left: 5px;
+    margin:0 0 7px;
+    color:#419fed;
+    font-size:15px;
+    letter-spacing:2px;
+}
+.myStudyInfo,.passwordChange,.myQC{
+	margin-left:8px;
+	margin-top: 10px;
+	color:#4d4d4d;
+	font-size:14px;
+	letter-spacing:1px;
+	cursor:pointer;
+}
+.myQuestionSpan{
+	display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #e60012;
+    text-align: center;
+    line-height: 16px;
+    border-radius: 16px;
+    font-size: 9px;
+    background: #e60012;
+    color: white;
+}
+.myCommentSpan{
+	display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #e60012;
+    text-align: center;
+    line-height: 16px;
+    border-radius: 16px;
+    font-size: 9px;
+    background: #e60012;
+    color: white;
+}
+.personalSafe{
+	margin-top:10px;
+}
+.studyPortfolio,.integralShop,.exchangeRecord{
+	margin-top:10px;
+	cursor:pointer;
+}
+/* 右边学习情况 */
+.studyInfo{
+	width:900px;
+	border-top:1px solid #82d1a9;
+}
+/* 我的消息、学习情况和安全设置部分 */
+.myInfoAndStudyInfoAndSafeSet{
+	display:block;
+}
+.myNumInfo{
+	margin: 20px 0 0 20px;
+    letter-spacing: 2px;
+    font-size:15px;
+}
+.monthState,.allState{
+	cursor:pointer;
+}
+.monthState:hover,.allState:hover{
+	color:#3799ec;
+}
+.allSelectedColor{
+	color:#3799ec;
+}
+
+.studyDetailInfo{
+	display:block;
+	margin-left:115px;
+	margin-top:20px;
+}
+
+.studyAllDetailInfo{
+	display:none;
+	margin-left:115px;
+	margin-top:20px;
+}
+
+
+.studyTime,.studyScore,.studyIntegral{
+	width:180px;
+	height:85px;
+	/* border:0.01rem solid blue; */
+	color:white;
+	border-radius:7px;
+	display:inline-block;
+}
+.studyTime{
+	background-color:#8c97ff;
+	margin-right:35px;
+}
+.studyScore{
+	background-color:#ffd05c;
+	margin-right:35px;
+}
+
+.studyIntegral{
+	background-color:#81ceff;
+}
+.studyTime img,.studyScore img,.studyIntegral img{
+	width: 15px;
+    height: 15px;
+    margin: 10px 10px 0 20px;
+    vertical-align:sub;
+}
+.studyTimeTitle,.studyScoreTitle,.studyIntegralTitle{
+	font-size: 16px;
+    letter-spacing: 2px;
+}
+.studyTimeNum span,.studyScoreNum span,.studyIntegralNum span{
+	font-size:25px;
+}
+.studyTimeNum,.studyScoreNum,.studyIntegralNum{
+	font-size:17px;
+	margin-left:60px;
+}
+.studyTimeRank,.studyScoreRank,.studyIntegralRank{
+	font-size: 15px;
+    margin-left: 60px;
+    margin-top:-15px;
+}
+/* 当点击左侧公司排名时，显示公司排名信息 */
+.companyRank{
+	display:block;
+}
+.companyRankImg img{
+	width: 250px;
+    margin-left: 300px;
+    margin-top: 70px;
+}
+.companyRankInfo{
+	margin:20px 0 0 80px;
+	padding-left:5px;
+	width:690px;
+	height:73px;
+	position:relative;
+	border-bottom:1px solid #e6e6e6;
+}
+.studyRankMedal{
+	margin:15px 0;
+}
+.studyRankMedal img{
+	width:30px;
+	margin-top:20px;
+}
+.studyRankerImg img{
+	width:55px;
+	height:55px;
+	border-radius:50px;
+}
+.studyRankerImg{
+	margin-left:-60px;
+	position:absolute;
+	top:5px;
+	left:120px;
+}
+.studyRankerInfo{
+	margin-left:-50px;
+	position: absolute;
+    top: 8px;
+    left:200px;
+    width: 150px;
+    height: 70px;
+    /* border: 0.01rem solid cyan; */
+}
+.studyRankerInfo p{
+	font-size:18px;
+	margin-bottom:2px;
+}
+.studyRankerInfo img{
+	width:15px;
+}
+.studyRankerInfo span{
+	color:#82ccfb;
+	font-size: 15px;
+    letter-spacing: 1px;
+}
+.studyRankerStudyTime{
+	position: absolute;
+    top: 20px;
+    left: 340px;
+    font-size: 16px;
+    width: 140px;
+    height: 60px;
+    /* border: 0.01rem solid blue; */
+    text-align:center;
+    color:#4d4d4d;
+}
+
+.studyRankerStudyScore{
+	position: absolute;
+    top: 20px;
+    left: 540px;
+    font-size: 16px;
+    width: 140px;
+    height: 60px;
+    /* border: 0.01rem solid red; */
+    text-align:center;
+    color:#4d4d4d;
+}
+/* 点击左侧的密码修改时，出现此修改密码页面*/
+.changePwd{
+	width:900px;
+	border-top:1px solid #82d1a9;
+	margin-top:50px;
+	display:none;
+
+}
+.changePwd p{
+	margin: 20px 0 0 20px;
+    letter-spacing: 2px;
+    font-size:15px;
+}
+.form-horizontal{
+	margin-top: 50px;
+	margin-left:20px;
+}
+.form-control{
+	width:39% !important;
+}
+.btn-1{
+	width: 20%;
+    border-radius: 4px !important;
+    font-size: 15px !important;
+}
+.col-sm-10{
+	display:flex;
+}
+.oldPwd{
+	margin-left:10px;
+	margin-top:10px;
+	font-size:10px;
+}
+.oldPwd img{
+	width:8px;
+	height:8px;
+	vertical-align:top;
+}
+
+
+/* 当两次输入的新密码不一样，点击确定按钮时，出现此提示 */
+.newpwdIsFalse{
+	display:none;
+	position:fixed;
+	left:0;
+	top:0;
+	bottom:0;
+	right:0;
+	width:100%;
+	z-index: 100;
+    
+}
+.bg{
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	background-color: slategrey;
+    opacity: 0.5;
+    z-index:-10;
+}
+
+.newpwdFalse{
+	width: 250px;
+    height: 160px;
+    border-radius: 10px;
+	background-color:white;
+	margin:0 auto;
+	margin-top:350px;
+}
+.pwdTitle{
+	font-size:15px;
+	letter-spacing:2px;
+	padding: 20px 0 0 90px;
+}
+.pwdIsLike{
+	padding:15px 0 0 50px;
+}
+.btnSure{
+	font-size:18px;
+	text-align:center;
+	border-top:1px solid #e6e6e6;
+	margin-top: 25px;
+    padding-top: 12px;
+    color:#419fed;
+}
+/* 当两次输入的新密码一样，点击确定按钮时，出现此提示 */
+.newpwdIsTrue{
+	display:none;
+	position:fixed;
+	left:0;
+	top:0;
+	bottom:0;
+	right:0;
+	width:100%;
+	z-index: 100;
+    
+}
+
+.btnSure{
+	cursor:pointer;
+}
+
+/* 当点击我的评论时，出现评论内容 */
+
+.commentContent{
+	display:none;
+	border-top:1px solid #82d1a9;
+	margin-top:50px;
+}
+.commentList{
+	margin-left: 100px;
+    border: 1px solid #e6e6e6;
+    margin-top:20px;
+    width:650px;
+}
+.commentItems{
+	margin: 10px 0 0px 25px;
+    padding-bottom: 5px;
+}
+.commenterName{
+	color:#f27c35;
+}
+.commentTime{
+	font-size:12px;
+	color:#999999;
+}
+/* 课程来源 */
+.courseRoute{
+	/* border: 1px solid blue; */
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    padding-left:25px;
+    background-color:#f0f6fa;
+}
+.courseRoute p{
+	display:inline-block;
+	width:600px;
+}
+.courseName{
+	color:#3f9dec;
+}
+.courseRoute a{
+	display:inline-block;
+}
+.courseRoute img{
+	width:8px;
+}
+
+/* 分页器 */
+
+.pageBox{
+    text-align: center;
+    margin: 20px auto;
+    color: #999;
+    font-size: 14px;
+}
+.pageBox a{
+    float: none;
+    border: 1px solid #d5d5d5;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 9px;
+    display: inline-block;
+    cursor: pointer;
+    background: #fff;
+    text-decoration: none;
+    color: #333;
+    margin-right: 5px;
+}
+.pageBox a:hover{
+    /* border-color:blue; */
+    background-color:#00a1d6;
+    color:white;
+    text-decoration:none;
+}
+.pageBox .colorRed{
+    color: red;
+}
+.pageBox .gopage{
+    width: 36px;
+    height: 22px;
+    line-height: 22px;
+    color: #999;
+    text-align: center;
+    margin-left: 1px;
+    margin-right: 1px;
+    border: 1px solid #c3c3c3;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    outline: none;
+}
+.pageBox .curr{
+    background: none repeat scroll 0 0 #00a1d6;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    z-index: 999;
+    margin-right: 5px;
+    display: inline-block;
+}
+.pageBox .disabled{
+    float: none;
+    display: inline-block;
+    padding: 0 9px;
+    margin-right: 5px;
+    border: 1px solid #d5d5d5;
+    background-color: #FFF;
+    color: #DFDFDF;
+    line-height: 28px;
+}
+.jumpPage{
+    width: 40px;
+    border-radius: 5px;
+    outline: none;
+}
+/* .jumpBtn{
+ background: #dfdfdf !important;
+    border: 1px solid #d5d5d5;
+   
+}
+.jumpBtn:hover{
+ color:black !important;
+ text-decoration:none !important;
+} */
+.jumpBtns{
+	width: 25px;
+    /* height: 25px;
+    line-height: 25px; */
+}
+.jumpBtn{
+	border:none !important;
+}
+.jumpBtn:hover{
+	border:none !important;
+	background-color:transparent !important;
+	color:black !important;
+}
+
+
+/* 积分明细内容 */
+.integralDetailContent{
+	display:none;
+	border-top:1px solid #82d1a9;
+	margin-top:50px;
+}
+.selectMonth{
+	margin:20px 0 0 80px;
+}
+.selectMonth span{
+	font-size:18px;
+}
+
+.btnMonth,.btnYear{
+	display:inline-block;
+	padding:5px 10px;
+	background-color:#419fed;
+	color:white;
+	cursor:pointer;
+}
+.integralTable{
+	margin:30px 0 0 70px;
+	width:760px;
+	height:350px;
+}
+ .tableTitle {  
+     width: 700px;  
+ }  
+ 
+.tableContent {  
+      width: 718px; 
+      height:300px; 
+      overflow: auto;  
+      overflow-x: hidden;  
+}  
+.tableTitle_left {  
+     float: left;  
+     margin-right: 17px;  
+}  
+.tableContent_left {  
+     float: left;  
+}  
+          
+.main_table {  
+    width: 700px; 
+    height:40px; 
+    border: 2px solid white;  
+    border-collapse: collapse;     
+    table-layout:fixed;
+    text-align: center;
+    background-color:#4a93d5; 
+    color:white; 
+}  
+.main_table1 {  
+    width: 700px; 
+    border: 2px solid transparent;  
+    border-collapse: collapse;     
+    table-layout:fixed;
+    text-align: center;  
+}  
+
+.main_table tr th ,.main_table1 tr td{    
+    border: 2px solid white;    
+    overflow: hidden;     
+    word-break: break-all;   
+    text-overflow: ellipsis;    
+    white-space: nowrap; 
+    text-align:center;   
+}     
+.tableContent table tbody tr:nth-child(2n){
+	background-color:#c4d3e9;
+	height:40px;
+}
+.tableContent table tbody tr:nth-child(2n+1){
+	background-color:#e0e8f4;
+	height:40px;
+} 
+
+/* 学习档案 */
+.studyPortfolioContent{
+	display:none;
+}
+/* 选择年份看成绩 */
+.studyPortfolioTop{
+	margin-left:50px;
+	display:flex;
+	justify-content:flex-start;
+	margin-top:30px;
+}
+.selectYearSeeScore,.studyCourseType{
+	
+	/* border:1px solid red; */
+	width:400px;
+	height:270px;
+}
+.allAssess{
+	margin-top:70px;
+}
+.personalCredit,.evaluation,.teachingHours{
+	font-size:18px;
+	margin-top:36px;
+}
+.evaluationContent{
+	display:flex;
+}
+.evaluation{
+	width:98px;
+}
+.evaluationDetailContent{
+	width:300px;
+}
+.studyCourseType p{
+	font-size:18px;
+	text-align:center;
+}
+.selectYearSeeScore span{
+	font-size:18px;
+}
+.personalPortfolio{
+	text-align:center;
+	margin-top:30px;
+	font-size:18px;
+}
+.studyBar{
+	/* border:1px solid blue; */
+	height:300px;
+}
+/* 积分商城内容 */
+.integralShopContent{
+	display:none;
+}
+.shopNavs{
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:nowrap;
+	width:800px;
+	margin: 20px 0 0 20px;
+	/* border:1px solid red; */
+}
+.shopNavsLeft{
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:nowrap;
+	width:300px;
+	/* border:1px solid blue; */
+	font-size:16px;
+}
+.moreRecord:hover,.newPublic:hover,.myAttention:hover,.allGoods:hover{
+	color:#3799ec;
+}
+.moreRecord,.newPublic,.myAttention,.allGoods{
+	cursor:pointer;
+}
+.allowRecord{
+	font-size:16px;
+}
+
+/* 所有可兑换商品 */
+.goodsAll{
+	display:block;
+}
+.moreRecordGood,.newRecordShop,.myAttentionRecord{
+	display:none;
+	font-size:16px;
+}
+.allGoodsContent{
+	height: 560px;
+    margin:10px 0 0 20px;
+    /* border: 1px solid blue; */
+    overflow: auto;
+    display:block;
+}
+.allRecordGoods{
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+	flex-wrap:wrap;
+	font-size:16px;
+}
+.recordGoodsDetail{
+	width: 170px;
+    text-align: center;
+    margin-bottom:30px;
+}
+.recordGoodsDetail img{
+	width:124px;
+	height:125px;
+	margin-bottom:10px;
+}
+.recordItems{
+	text-align: left;
+    margin-left: 40px;
+}
+.attention,.record{
+	display: inline-block;
+    /* border: 1px solid red; */
+    padding: 5px 8px;
+    background: #f57d2d;
+    color: white;
+    cursor:pointer;
+    width:64px;
+}
+
+/* 点击兑换 */
+.nowRecord,.nowMostGoodRecord,.nowNewGoodRecord,.nowFocusGoodRecord{
+	display:none;
+	position:fixed;
+	left:0;
+	top:0;
+	bottom:0;
+	right:0;
+	width:100%;
+	z-index: 100;
+    
+}
+.bgs{
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	background-color: slategrey;
+    opacity: 0.5;
+    z-index:-10;
+}
+
+.recordState{
+	width: 350px;
+    height: 200px;
+    border-radius: 10px;
+	background-color:white;
+	margin:0 auto;
+	margin-top:350px;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:nowrap;
+	align-items:center;
+}
+.recordState img,.nowMostGoodRecord img,.nowNewGoodRecord img,.nowFocusGoodRecord img{
+	width:100px;
+	height:121px;
+}
+.isRecord{
+	width:140px;
+	font-size:16px;
+}
+.recordSure{
+	font-size:18px;
+}
+.recordOrIntegralLow{
+	background-color:#f57d2d;
+	padding: 5px 10px;
+	width: 85px;
+    text-align: center;
+    margin-left: 20px;
+    cursor:pointer;
+}
+.notMoney{
+	background-color: darkgray;
+    padding: 5px 10px;
+    width: 85px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+/* 兑换记录 */
+.recordContent{
+	display:none;
+}
+.costIntegral{
+	font-size:16px;
+	margin:20px 0 20px 20px;
+}
+.allGoodsContentRecord{
+	height: 560px;
+    margin:10px 0 0 20px;
+    /* border: 1px solid blue; */
+    overflow: auto;
+    display:block;
+}
+.haveRecord{
+	padding: 5px 8px;
+    background: #f57d2d;
+    color: white;
+    width:64px;
+    margin-left: 50px;
+}
+.recordNum{
+	text-align: left;
+    margin-left: 40px;
+}
+

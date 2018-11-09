@@ -1,0 +1,335 @@
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	width:100%;
+	height:100%;
+	/* min-width:1440px; */
+	
+}
+/* 顶部导航条 */
+.navs{
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:11;
+	width:100%;
+	min-width:1010px;
+	cursor:pointer;
+}
+.selectedDiv{
+	display:block;
+	/*width:1440px;*/
+	height:90px;
+	 /* border:1px solid red;  */
+	box-shadow: 2px 2px 10px darkgrey;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:nowrap;
+	align-items:center;
+	background-color:white;
+}
+.logoImgHidden{
+	/* border:1px solid blue; */
+	width: 127px;
+	height: 51px;
+}
+.selectedLi{
+	display:block;
+	/* border:1px solid blue; */
+	width: 730px;
+	height: 20px;
+}
+
+.selectedLi ul{
+	margin-bottom:-5px;
+	width: 730px;
+}
+.selectedLi ul li{
+	list-style:none;
+	display:inline-block;
+	margin-right:2.3%;
+	margin-left: 2.3%;
+	font-size:14px;
+}
+ul li a{
+	color:black;
+	text-decoration: none !important;
+}
+ul li a:hover{
+	color:black;
+	text-decoration: none;
+}
+.selectedColor{
+	color:#3799ec !important;
+	border-bottom:2px solid #3799ec;
+}
+
+.btn{
+	border-radius:0 4px 4px 0 !important;
+	margin-left:-4px;
+	margin-top:-3px;
+	outline:none;
+}
+.loginerInfoHidden{
+	width:265px;
+	height:53px;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:nowrap;
+	align-items:center;
+	margin-right:10px;
+	/* border:1px solid blue; */
+}
+.searchImg img{
+	width:20px;
+	height:20px;
+	display:inline-block;
+}
+.btn-search{
+	border-radius:4px !important;
+	padding:3px 6px !important;
+}
+.btn-success{
+	color: #fff;
+    background-color: #73d25a !important;
+    border-color: #73d25a !important;
+}
+.bellHidden{
+	border-left:1px solid #cccccc;
+	padding-left:6px;
+	border-right:1px solid #cccccc;
+	padding-right:8px;
+}
+ .bellHiddenImg{
+	width:20px;
+	height:20px;
+	display:inline-block;
+}
+ .starts{
+	width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.loginerHiddenImg img{
+	width:40px;
+	height:40px;
+	border-radius:40px;
+}
+.loginerHiddenName p{
+	margin:0 0 1px;
+	font-size:14px;
+}
+
+/* 搜索框，不在页面显示，当点击搜索图标时，
+显示搜索框，且搜索图标隐藏 */
+.navSearch_hidden{
+	display:none;
+
+}
+.selectedDiv_block{
+	/*width:1440px;*/
+	height:90px;
+	 /*border:1px solid red;*/ 
+	box-shadow: 2px 2px 10px darkgrey;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:nowrap;
+	align-items:center;
+	background-color:white;
+}
+.selectedInput{
+	display:block;
+	/*border:1px solid blue;*/
+	width: 730px;
+	/* height: 20px; */
+	text-align:center;
+}
+.selectedInput input{
+	width: 560px;
+	height: 34px;
+	outline:none;
+}
+.searchImgHidden{
+	width: 56px;
+	height: 21px;
+}
+.searchImgHidden img{
+	width:20px;
+	height:20px;
+	display:inline-block;
+	display: none;
+}
+/* 内容部分 */
+.bodyContent{
+	width:100%;
+}
+.content{
+	width:1152px;
+	/* height:125px; */
+	margin:0 auto;
+	/* border:1px solid blue; */
+	/* margin-top:120px; */
+	padding-top:120px;
+	position:relative;
+}
+.ss{
+	width:100%;
+}
+
+/* 嘉华在线学院 */
+ .contentTopBg img{
+	width:100%;
+	height:125px;
+} 
+/* 各个梯队学习地图情况 */
+.studyMapContent{
+	width:72%;
+	margin:0 auto;
+	/* margin-left: 140px; */
+}
+.studyMapContent img{
+	width:55px;
+}
+.studyMapTitle{
+	font-size:18px;
+	text-align:center;
+	margin-top:35px;
+	margin-bottom: 20px;
+}
+.studyMapStageContent{
+	display:flex;
+	justify-content:flex-start;
+	flex-wrap:wrap;
+	align-items:center;
+	/* margin-left:20px; */
+	margin-bottom:30px;
+	line-height:60px;
+}
+
+.studyMapStageDetail{
+	display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.contentItems{
+	display: inline-block;
+    margin-left: -4px;
+}
+.contentItemsList_1{
+	border: 1px solid #f27c35;
+    width: 120px;
+    height: 32px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 32px;
+    cursor:pointer;
+}
+.stage_1{
+	/* border: 1px solid red; */
+	background-color:#f27c35;
+    border-radius: 15px;
+    margin: 2px;
+    height: 26px;
+    line-height: 26px;
+    color:white;
+}
+.arrow_1{
+	width:0px;
+	height:0px;
+	border-left:5px solid transparent;
+	border-right:5px solid transparent;
+	border-top:5px solid #f27c35;
+	font-size:0px;
+	line-height:0px;
+	margin:0 auto;
+}
+/* 剩余阶段  颜色：#f2a435  #57c941  #00b4af   #35a0f2 */
+.contentItemsList_2{
+	border: 1px solid #b3b3b3;
+    width: 120px;
+    height: 32px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 32px;
+    cursor:pointer;
+}
+.stage_2{
+	/* border: 1px solid red; */
+	background-color:#d9d9d9;
+    border-radius: 15px;
+    margin: 2px;
+    height: 26px;
+    line-height: 26px;
+    color:white;
+}
+.arrow_2{
+	display:none;
+	width:0px;
+	height:0px;
+	border-left:5px solid transparent;
+	border-right:5px solid transparent;
+	border-top:5px solid #f2a435;
+	font-size:0px;
+	line-height:0px;
+	margin:0 auto;
+}
+
+/* 每个梯队的详细课程内容 */
+.studyMapCourse{
+	width:80%;
+	margin:0 auto;
+
+}
+.tb_Name{
+	width:430px;
+	/* border:1px solid red; */
+	/* height:35px; */
+	text-align:center;
+	background-color:#edf4fa;
+	color:#4f6b90;
+	font-size:20px;
+}
+.tb_status{
+	width:280px;
+	/* border:1px solid blue; */
+	/* height:35px; */
+	text-align:center;
+	background-color:#edf4fa;
+	color:#4f6b90;
+	font-size:20px;
+}
+td,th{
+	height:50px;
+}
+td{
+	font-size:17px;
+}
+
+.nextStage,.nextStage_2{
+	width: 120px;
+    height: 30px;
+    line-height: 30px;
+    /* border: 1px solid gray; */
+    color: white;
+    background-color: #d9d9d9;
+    text-align: center;
+  	margin:0 auto;
+    margin-top: 50px;
+    cursor:pointer;
+}
+.tb_1,.tb_2,.tb_3,.tb_4{
+	text-align:center;
+}
+.studyMapCourse_2{
+	width:80%;
+	margin:0 auto;
+	display:none;
+}
+
+

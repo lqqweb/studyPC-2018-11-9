@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />  
+	<title>个人中心</title>
+	<link rel="stylesheet" href="css/personalCenter.css">
+	<link rel="stylesheet" href="css/jedate.css">
+	<link rel="stylesheet" href="css/bootstrap-3.3.7/dist/css/bootstrap.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/personalCenter.js"></script>
+	<script src="js/search.js"></script>
+	<script src="js/jquery.jedate.min.js"></script>
+	<script src="js/echarts.min.js"></script>
+	
+</head>
+<body>
+	<!-- 顶部导航条、 -->
+	<div class="navs">
+		<div class="selectedDiv">
+			<div class="logoImgHidden">
+				<img src="images/logo_01.png" alt="">
+			</div>
+			<div class="selectedLi">
+				<ul>
+					<li  ><a href="index.html" class="firstPage ">首页</a></li>
+					<li ><a href="newPeople.html" class="newPeople">新员工培训</a></li>
+					<li ><a href="newPublicCourse.html" class="newPublicCourse">最新课程</a></li>
+					<li ><a href="mySelectedCourse.html" class="selectedCourse">已选课程</a></li>
+					<li ><a href="onlineTest.html" class="onlineTest">在线考试</a></li>
+					<!-- <li class="courseContribute">课程投稿</li> -->
+					<li ><a href="studyMap.html" class="studyMap">学习地图</a></li>
+					<!-- <li class="moblieLogin">移动端登录</li> -->
+					<li ><a href="personalCenter.html" class="personalCenter selectedColor">个人中心</a></li>
+
+					<li>
+						<a href="OperationalData.html" class="OperationalData">运营数据</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="loginerInfoHidden">
+					<div class="searchImg">
+						<!-- <img src="images/search.png" alt=""> -->
+						<button type="button" class="btn btn-search btn-success">
+						  <span class="glyphicon glyphicon-search" aria-hidden="true"></span> 搜索
+						</button>
+					</div>
+					<div class="bellHidden">
+						<img class="bellHiddenImg" src="images/bell.png" alt="">
+						<img class="starts" src="images/start.png" alt="">
+					</div>
+					<div class="loginerHiddenImg">
+						<img src="images/header.jpg" alt="">
+					</div>
+					<div class="loginerHiddenName">
+						<p>张三</p>
+						<p>JH015222</p>
+					</div>
+				</div>
+		</div>
+
+			<!-- 搜索框，不在页面显示，当点击搜索图标时，显示搜索框，且搜索图标隐藏-->
+		<div class="navSearch_hidden">
+			<div class="selectedDiv_block">
+				<div class="logoImgHidden">
+					<img src="images/logo_01.png" alt="">
+				</div>
+				<div class="selectedInput">
+					<input type="text" placeholder="请输入想要搜索的课程名或所属分类名称">
+						<button type="button" class="btn btn-success">
+						  <span class="glyphicon glyphicon-search" aria-hidden="true"></span> 搜索
+						</button>
+				</div>
+
+				<div class="loginerInfoHidden">
+						<div class="searchImgHidden">
+							<img src="images/search.png" alt="">
+						</div>
+						<div class="bellHidden">
+							<img class="bellHiddenImg" src="images/bell.png" alt="">
+							<img class="starts" src="images/start.png" alt="">
+						</div>
+						<div class="loginerHiddenImg">
+							<img src="images/header.jpg" alt="">
+						</div>
+						<div class="loginerHiddenName">
+							<p>张三</p>
+							<p>JH015222</p>
+						</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<!-- 内容部分 -->
+	<div class="bodyContent">
+		<div class="content">
+			<!-- 左边个人信息 -->
+			<div class="personalInfo">
+				<div class="infoBg">
+					<img class="bgImg" src="images/personalCenter/infoBg.png" alt="">
+					<div  class="personalImg" >
+						<img src="images/personalCenter/header.jpg" alt="">
+						<p>NO.1024</p>
+					</div>
+					
+					<div class="personalInfoItem">
+						<p class="personalName">张三</p>&nbsp;&nbsp;&nbsp;&nbsp;<p class="personalNum">JH120155</p>
+					</div>
+					<p class="personalJob">所在部门:人力资源部</p>
+				</div>
+				<div class="personalStatus">
+					<!-- 我的消息 -->
+					<div class="myInfo">
+						<div class="myInfoDetail">
+							<p class="myMessage"><b>我的消息</b></p>
+						</div>
+						<div class="myQC">
+							<p class="myQuestion"><b>我的提问</b>&nbsp;&nbsp;&nbsp;&nbsp;<span class="myQuestionSpan">1</span></p>
+							<p class="myComment"><b>我的评论</b>&nbsp;&nbsp;&nbsp;&nbsp;<span class="myCommentSpan">1</span></p>
+						</div>
+					</div>
+					<!-- 学习情况 -->
+					<div class="studyStatusInfo">
+						<div class="studyStatusLine">
+							<p class="studyStatus"><b>学习情况</b></p>
+						</div>
+						<div class="myStudyInfo">
+							<!-- <p class="myStudyTime"><b>我的学时</b></p>
+							<p class="myStudyScore"><b>我的学分</b></p> -->
+							
+							<p class="myCompanyRank"><b>公司排名</b></p>
+							<p class="integralDetail"><b>积分明细</b></p>
+						</div>
+						
+					</div>
+					
+					<!-- 学习档案 -->
+					<div class="studyPortfolio">
+						<div class="safeSet">
+							<p class="safeStatus"><b>学习档案</b></p>
+						</div>
+					</div>
+					<!-- 安全设置 -->
+					<div class="personalSafe">
+						<div class="safeSet">
+							<p class="safeStatus"><b>安全设置</b></p>
+						</div>
+						<p class="passwordChange"><b>密码修改</b></p>
+					</div>
+					<!-- 积分商城 -->
+					<div class="integralShop">
+						<div class="safeSet">
+							<p class="safeStatus"><b>积分商城</b></p>
+						</div>
+					</div>
+					<!-- 兑换记录 -->
+					<div class="exchangeRecord">
+						<div class="safeSet">
+							<p class="safeStatus"><b>兑换记录</b></p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<!-- 右边学习情况 -->
+			<div class="studyInfo">
+				<!-- 我的消息、学习情况和安全设置部分 -->
+				<div class="myInfoAndStudyInfoAndSafeSet">
+					<p class="myNumInfo"><b>我的排名信息:</b> &nbsp;&nbsp;&nbsp;&nbsp;<span class="monthState allSelectedColor">月度情况</span>&nbsp;/&nbsp;<span class="allState">总情况</span></p>
+
+					<!-- 月度-学时，学分，积分 -->
+					<div class="studyDetailInfo">
+						<div class="studyTime">
+							<img src="images/personalCenter/studyTime.png" alt=""><span class="studyTimeTitle">月度学时</span>
+							<p class="studyTimeNum"><span>200</span>分钟</p>
+							<p class="studyTimeRank">NO.211541</p>
+						</div>
+						<div class="studyScore">
+							<img src="images/personalCenter/studyScore.png" alt=""><span class="studyScoreTitle">月度学分</span>
+							<p class="studyScoreNum"><span>5000</span>分</p>
+							<p class="studyScoreRank">NO.211541</p>
+						</div>
+						<div class="studyIntegral">
+							<img src="images/personalCenter/studyIntegral.png" alt=""><span class="studyIntegralTitle">月度积分</span>
+							<p class="studyIntegralNum"><span>2080</span>分</p>
+							<p class="studyIntegralRank">NO.101551</p>
+						</div>
+						
+					</div>
+
+
+					<!-- 总-学时，学分，积分 -->
+					<div class="studyAllDetailInfo">
+						<div class="studyTime">
+							<img src="images/personalCenter/studyTime.png" alt=""><span class="studyTimeTitle">总学时</span>
+							<p class="studyTimeNum"><span>200</span>分钟</p>
+							<p class="studyTimeRank">NO.211541</p>
+						</div>
+						<div class="studyScore">
+							<img src="images/personalCenter/studyScore.png" alt=""><span class="studyScoreTitle">总学分</span>
+							<p class="studyScoreNum"><span>5000</span>分</p>
+							<p class="studyScoreRank">NO.211541</p>
+						</div>
+						<div class="studyIntegral">
+							<img src="images/personalCenter/studyIntegral.png" alt=""><span class="studyIntegralTitle">总积分</span>
+							<p class="studyIntegralNum"><span>2080</span>分</p>
+							<p class="studyIntegralRank">NO.101551</p>
+						</div>
+						
+					</div>
+
+
+					<!-- 当点击左侧公司排名时，显示公司排名信息 -->
+					<div class="companyRank">
+				
+						<div class="companyRankImg">
+							<img src="images/personalCenter/rank.png" alt="">
+						</div>
+						<!-- 第一名 -->
+						<div class="companyRankInfo">
+							<div class="studyRankMedal">
+								<img src="images/personalCenter/medal_1.png" alt="">
+							</div>
+							<div class="studyRankerImg">
+								<img src="images/header.jpg" alt="">
+							</div>
+							<div class="studyRankerInfo">
+								<p><b>张晓晓</b></p>
+								<img src="images/personalCenter/studyIntegral_blue.png" alt=""><span>36000第5名</span>
+							</div>
+							<div class="studyRankerStudyTime">
+								<p><b>学时<span>5016</span>&nbsp;&nbsp;<span>NO.1</span></b></p>
+								
+							</div>
+							<div class="studyRankerStudyScore">
+								<p><b>学分<span>12500</span>&nbsp;&nbsp;<span>NO.1</span></b></p>
+							</div>
+							
+						</div>
+						<!-- 第二名 -->
+						<div class="companyRankInfo">
+							<div class="studyRankMedal">
+								<img src="images/personalCenter/medal_2.png" alt="">
+							</div>
+							<div class="studyRankerImg">
+								<img src="images/header.jpg" alt="">
+							</div>
+							<div class="studyRankerInfo">
+								<p><b>陈列</b></p>
+								<img src="images/personalCenter/studyIntegral_blue.png" alt=""><span>4180第1名</span>
+							</div>
+							<div class="studyRankerStudyTime">
+								<p><b>学时<span>4860</span>&nbsp;&nbsp;<span>NO.2</span></b></p>
+								
+							</div>
+							<div class="studyRankerStudyScore">
+								<p><b>学分<span>10584</span>&nbsp;&nbsp;<span>NO.2</span></b></p>
+							</div>
+							
+						</div>
+						<!-- 第三名 -->
+						<div class="companyRankInfo">
+							<div class="studyRankMedal">
+								<img src="images/personalCenter/medal_3.png" alt="">
+							</div>
+							<div class="studyRankerImg">
+								<img src="images/header.jpg" alt="">
+							</div>
+							<div class="studyRankerInfo">
+								<p><b>周明明</b></p>
+								<img src="images/personalCenter/studyIntegral_blue.png" alt=""><span>3877第2名</span>
+							</div>
+							<div class="studyRankerStudyTime">
+								<p><b>学时<span>3697</span>&nbsp;&nbsp;<span>NO.3</span></b></p>
+								
+							</div>
+							<div class="studyRankerStudyScore">
+								<p><b>学分<span>9771</span>&nbsp;&nbsp;<span>NO.3</span></b></p>
+							</div>
+							
+						</div>
+					</div>
+					<!-- 点击左侧的密码修改时，出现此修改密码页面 -->
+					<div class="changePwd">
+						<p><b>密码修改:</b></p>
+						<form class="form-horizontal">
+							  <div class="form-group">
+							    <label for="inputPwd1" class="col-sm-2 control-label">原密码:</label>
+							    <div class="col-sm-10">
+							      <input type="password" class="form-control" id="inputPwd1" placeholder="">
+							     <div class="oldPwd">
+							     	<img src="images/start.png" alt="">请输入原密码
+							     </div>
+							    </div>
+							  </div>
+							  <div class="form-group">
+							    <label for="inputPassword2" class="col-sm-2 control-label">新密码:</label>
+							    <div class="col-sm-10">
+							      <input type="password" class="form-control" id="inputPassword2" placeholder="">
+							      <div class="oldPwd">
+							     	<img src="images/start.png" alt="">为了您的账号安全，密码必需包含字母和数字，长度6-16
+							     </div>
+							    </div>
+							  </div>
+							  <div class="form-group">
+							    <label for="inputPassword3" class="col-sm-2 control-label">确认新密码:</label>
+							    <div class="col-sm-10">
+							      <input type="password" class="form-control" id="inputPassword3" placeholder="">
+							      <div class="oldPwd">
+							     	<img src="images/start.png" alt="">请再输入一次新密码
+							     </div>
+							    </div>
+							  </div>
+
+							  <div class="form-group">
+							    <div class="col-sm-offset-2 col-sm-10">
+							      <button type="button" class="btn btn-success btn-1">确认</button>
+							    </div>
+							  </div>
+						</form>
+						
+					</div>
+
+					<!-- 当两次输入的新密码不一样，点击确定按钮时，出现此提示 -->
+					<div class="newpwdIsFalse">
+						<div class="bg"></div>
+						<div class="newpwdFalse">
+							<p class="pwdTitle"><b>密码修改</b></p>
+							<p class="pwdIsLike">两次输入的新密码不一致</p>
+							<p class="btnSure">确定</p>
+						</div>
+					</div>
+
+					<!-- 当两次输入的新密码一样，点击确定按钮时，出现此提示 -->
+					<div class="newpwdIsTrue">
+						<div class="bg"></div>
+						<div class="newpwdFalse">
+							<p class="pwdTitle"><b>密码修改</b></p>
+							<p class="pwdIsLike">恭喜您:密码修改成功!</p>
+							<p class="btnSure">确定</p>
+						</div>
+					</div>
+
+					<!-- 当点击我的评论时，出现评论内容 -->
+					<div class="commentContent">
+						<div class="commentList">
+
+							<div class="commentItems">
+								<div class="commenterContent">
+									<span class="commenterName"><b>蒋洪亮</b></span>&nbsp;<b>:</b>&nbsp;&nbsp;<span><b>按照学习安排已经看完一半啦</b></span>
+								</div>
+								<div class="commentTime">
+									2018-02-26  15:39
+								</div>
+							</div>
+
+							<div class="commentItems">
+								<div class="commenterContent">
+									<span class="commenterName"><b>周晨</b></span>&nbsp;<b>回复</b>&nbsp;<span class="commenterName">@<b>张丽莉</b></span><b>:</b>&nbsp;&nbsp;<span><b>嗯嗯!</b></span>
+								</div>
+								<div class="commentTime">
+									2018-02-26  15:39
+								</div>
+							</div>
+
+							<div class="commentItems">
+								<div class="commenterContent">
+									<span class="commenterName"><b>张丽莉</b></span>&nbsp;<b>:</b>&nbsp;&nbsp;<span><b>我也这么觉得！</b></span>
+								</div>
+								<div class="commentTime">
+									2018-02-26  15:39
+								</div>
+							</div>
+
+							<div class="commentItems">
+								<div class="commenterContent">
+									<b>回复</b>&nbsp;<span class="commenterName">@<b>张丽莉</b></span><b>:</b>&nbsp;&nbsp;<span><b>课程设置很合理，主要还是需要自己多做练习，只要花时间，一定能有提升。需要自己多做练习，只要花时间，一定能有提升。</b></span>
+								</div>
+								<div class="commentTime">
+									2018-02-26  15:39
+								</div>
+							</div>
+
+							<div class="commentItems">
+								<div class="commenterContent">
+									<span class="commenterName"><b>张丽莉</b></span>&nbsp;<b>:</b>&nbsp;&nbsp;<span><b>课程很实用</b></span>
+								</div>
+								<div class="commentTime">
+									2018-02-26  15:39
+								</div>
+							</div>
+
+
+							<div class="commentItems">
+								<div class="commenterContent">
+									<b>回复</b>&nbsp;<b>:</b>&nbsp;&nbsp;<span><b>很好的教程</b></span>
+								</div>
+								<div class="commentTime">
+									2018-02-26  15:39
+								</div>
+							</div>
+
+							<!-- 课程来源 -->
+							<div class="courseRoute">
+								<p><b>来自教程:</b>&nbsp;&nbsp;<span class="courseName"><b><a href="">《Excel应用技巧-文本技巧》</a></b></span></p>
+								<a href=""><img src="images/comment/arrow-right.png" alt=""></a>
+							</div>
+
+						</div>
+
+
+						<div class="commentList">
+
+							<div class="commentItems">
+								<div class="commenterContent">
+									<b>回复</b>&nbsp;<span class="commenterName">@<b>lif055</b></span><b>:</b>&nbsp;&nbsp;<span><b>下次照着做就不会错了。</b></span>
+								</div>
+								<div class="commentTime">
+									2018-02-26  15:39
+								</div>
+							</div>
+
+						
+							<!-- 课程来源 -->
+							<div class="courseRoute">
+								<p><b>来自教程:</b>&nbsp;&nbsp;<span class="courseName"><b>《财务报销流程》</b></span></p>
+								<a href=""><img src="images/comment/arrow-right.png" alt=""></a>
+							</div>
+
+						</div>
+						
+
+						<div class="commentList">
+
+							<div class="commentItems">
+								<div class="commenterContent">
+									<b>回复</b>&nbsp;<b>:</b>&nbsp;&nbsp;<span><b>学习了。</b></span>
+								</div>
+								<div class="commentTime">
+									2018-02-26  15:39
+								</div>
+							</div>
+
+						
+							<!-- 课程来源 -->
+							<div class="courseRoute">
+								<p><b>来自教程:</b>&nbsp;&nbsp;<span class="courseName"><b>《财务报销流程》</b></span></p>
+								<a href=""><img src="images/comment/arrow-right.png" alt=""></a>
+							</div>
+
+						</div>
+
+						<!-- 分页器 -->
+						<div class="pageSplit">
+							<div class="pageBox">
+								<span class="pageSpan"></span>
+							</div>
+							<script src="js/page.js"></script>
+							<script>
+					            $(function() {
+					                //分页
+					                $(".pageSpan").createPage({
+					                    pageIndex:5,
+					                    totalPage:9,
+					                    backFn:function(pageIndex){
+					                        console.log(pageIndex);
+					                    }
+					                });
+					            });
+				        	</script>
+				        </div>
+
+
+					</div>
+
+					<!-- 积分明细内容 -->
+
+					<div class="integralDetailContent">
+						<div class="selectMonth">
+								<span>选择月份：</span>
+							<input class="datainp wicon" id="selectDate" type="text" placeholder="请选择月份"  readonly>
+							<div class="btnMonth">确定</div>
+						</div>
+
+						<div class="integralTable">
+							
+							<div class="tableTitle">  
+				                <div class="tableTitle_left">  
+				                <table class="main_table">  
+				                    <tr>  
+				                        <th style="width: 8px;">序号</th>
+				                        <th style="width: 18px;">获取积分</th>
+				                        <th style="width: 42px;">获取原因</th>
+				                         <th style="width: 21px;">时间</th>
+				                    </tr>  
+				                </table>  
+				                </div>  
+				            </div>  
+				            <div class="tableContent">  
+				                <div class="tableContent_left">  
+				                <table class="main_table1">  
+				                    <tr>  
+				                        <td style="width: 8px;">1</td>
+				                        <td style="width: 18px;">21</td>
+				                        <td style="width: 42px;" title="灌灌灌灌灌过过过过过过过过过过过过过过过过过过过过过过过">灌灌灌灌灌过过过过过过过过过过过过过过过过过过过过过过过</td> 
+				                        <td style="width: 21px;">2018-2-2</td>
+				                    </tr>  
+				                   
+				                    <tr>  
+				                        <td style="width: 8px;">1</td>
+				                        <td style="width: 18px;">21</td>
+				                        <td style="width: 42px;" title="灌灌灌灌灌过过过过过过过过过过过过过过过过过过过过过过过">灌灌灌灌灌过过过过过过过过过过过过过过过过过过过过过过过</td> 
+				                        <td style="width: 21px;">2018-2-2</td>
+				                    </tr>  
+
+									<tr>  
+				                        <td style="width: 8px;">1</td>
+				                        <td style="width: 18px;">21</td>
+				                        <td style="width: 42px;" title="灌灌灌灌灌过过过过过过过过过过过过过过过过过过过过过过过">灌灌灌灌灌过过过过过过过过过过过过过过过过过过过过过过过</td> 
+				                        <td style="width: 21px;">2018-2-2</td>
+				                    </tr>  
+
+				                </table>  
+				                </div>  
+				            </div>  
+						</div>
+					</div>
+				</div>
+
+				<!-- 学习档案内容 -->
+				<div class="studyPortfolioContent">
+					<div class="studyPortfolioTop">
+						<!-- 选择年份看成绩 -->
+						<div class="selectYearSeeScore">
+							<span>选择年份：</span>
+							<input class="datainp wicon" id="selectYear" type="text" placeholder="请选择年份"  readonly>
+							<div class="btnYear">确定</div>
+							<div class="allAssess">
+								<p class="personalCredit">个人学分&nbsp;&nbsp;:&nbsp;&nbsp;<span>80</span></p>
+								<!-- <div class="evaluationContent">
+									<p class="evaluation">考核评价&nbsp;&nbsp;:&nbsp;&nbsp;</p>
+									<p class="evaluationDetailContent">对方感受到法国大使馆第三个第四个是东莞市公司规定发生过的事故发生股份公司股份公司归属感</p>
+								</div> -->
+								<p class="teachingHours">授课学时&nbsp;&nbsp;:&nbsp;&nbsp;<span>1800</span></p>
+							</div>
+						</div>
+							<!-- 学习课程类别 -->
+						<div class="studyCourseType">
+							<!-- <p>学习课程类别</p> -->
+							<div id="pieContainer" style="width: 400px;  height: 250px; margin: 0 auto"></div>
+						</div>
+					</div>
+					<!-- 个人档案 -->
+					<div class="studyPortfolioBottom">
+						<!-- <p class="personalPortfolio">个人档案</p> -->
+						<div class="studyBar">
+							<div id="barContainer" style="width: 880px;  height: 300px; margin: 0 auto"></div>
+						</div>
+					</div>
+				</div>
+
+				<!-- 积分商城内容 -->
+				<div class="integralShopContent">
+					
+					<div class="shopNavs">
+						<div class="shopNavsLeft">
+							<p class="allGoods allSelectedColor">所有商品</p>
+							<p class="moreRecord">最多兑换</p>
+							<p class="newPublic">最新上架</p>
+							<p class="myAttention">我的关注</p>
+						</div>
+						<div class="allowRecord">
+							<span>可兑换积分：</span>&nbsp;&nbsp;<span>2000000000</span>
+						</div>
+					</div>
+
+					<!-- 所有可兑换商品 -->
+					<div class="allGoodsContent">
+
+							<!-- 所有商品 -->
+							
+					
+							<div class="goodsAll">
+								<div class="allRecordGoods">
+									<div class="recordGoodsDetail">
+										<img src="images/personalCenter/paid.png" alt="">
+										<div class="recordItems">
+											<p>积分：20w</p>
+											<p>库存：5</p>
+											<p>已兑：5</p>
+										</div>
+										<div class="attention">关注</div>
+										<div class="record">兑换</div>
+									</div>
+									
+								</div>
+							</div>
+
+						
+							<!-- 最多兑换 -->
+							<div class="moreRecordGood">
+								<div class="allRecordGoods">
+									<div class="recordGoodsDetail">
+										<img src="images/personalCenter/paid.png" alt="">
+										<div class="recordItems">
+											<p>积分：20w</p>
+											<p>库存：6</p>
+											<p>已兑：5</p>
+										</div>
+										<div class="attention">关注</div>
+										<div class="record">兑换</div>
+									</div>
+
+								</div>
+							</div>
+							<!-- 最新上架 -->
+							<div class="newRecordShop">
+								<div class="allRecordGoods">
+									<div class="recordGoodsDetail">
+										<img src="images/personalCenter/paid.png" alt="">
+										<div class="recordItems">
+											<p>积分：20w</p>
+											<p>库存：7</p>
+											<p>已兑：5</p>
+										</div>
+										<div class="attention">关注</div>
+										<div class="record">兑换</div>
+									</div>
+									
+								</div>
+							</div>
+
+							<!-- 我的关注 -->
+							<div class="myAttentionRecord">
+								<div class="allRecordGoods">
+									<div class="recordGoodsDetail">
+										<img src="images/personalCenter/paid.png" alt="">
+										<div class="recordItems">
+											<p>积分：20w</p>
+											<p>库存：8</p>
+											<p>已兑：5</p>
+										</div>
+										<div class="attention">关注</div>
+										<div class="record">兑换</div>
+									</div>
+								</div>
+							</div>
+
+
+						
+					</div>
+
+					<!-- 点击所有商品兑换按钮，显示积分情况-->
+
+					<div class="nowRecord">
+						<div class="bgs"></div>
+						<div class="recordState">
+							<img src="images/personalCenter/paid.png" alt="">
+							<div class="isRecord">
+								<p class="recordSure"><b>兑换确认</b></p>
+								<p>现有积分：25w</p>
+								<p>扣除积分：20w</p>
+								<p>积分剩余：5w</p>
+								<p class="recordOrIntegralLow">兑换</p>
+								<p class="notMoney">余额不足</p>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- 点击最多商品兑换按钮，显示积分情况-->
+
+					<div class="nowMostGoodRecord">
+						<div class="bgs"></div>
+						<div class="recordState">
+							<img src="images/personalCenter/paid.png" alt="">
+							<div class="isRecord">
+								<p class="recordSure"><b>兑换确认</b></p>
+								<p>现有积分：25w</p>
+								<p>扣除积分：20w</p>
+								<p>积分剩余：5w</p>
+								<p class="recordOrIntegralLow">兑换</p>
+								<p class="notMoney">余额不足</p>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- 点击最新上架兑换按钮，显示积分情况-->
+
+					<div class="nowNewGoodRecord">
+						<div class="bgs"></div>
+						<div class="recordState">
+							<img src="images/personalCenter/paid.png" alt="">
+							<div class="isRecord">
+								<p class="recordSure"><b>兑换确认</b></p>
+								<p>现有积分：25w</p>
+								<p>扣除积分：20w</p>
+								<p>积分剩余：5w</p>
+								<p class="recordOrIntegralLow">兑换</p>
+								<p class="notMoney">余额不足</p>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- 点击我的关注兑换按钮，显示积分情况-->
+
+					<div class="nowFocusGoodRecord">
+						<div class="bgs"></div>
+						<div class="recordState">
+							<img src="images/personalCenter/paid.png" alt="">
+							<div class="isRecord">
+								<p class="recordSure"><b>兑换确认</b></p>
+								<p>现有积分：25w</p>
+								<p>扣除积分：20w</p>
+								<p>积分剩余：5w</p>
+								<p class="recordOrIntegralLow">兑换</p>
+								<p class="notMoney">余额不足</p>
+							</div>
+						</div>
+					</div>
+
+					
+				</div>
+
+				<!-- 兑换记录 -->
+				<div class="recordContent">
+					<p class="costIntegral">花费总积分：200000</p>
+					<div class="allGoodsContentRecord">
+						<div class="allRecordGoods">
+
+							<div class="recordGoodsDetail">
+								<img src="images/personalCenter/paid.png" alt="">
+								<div class="recordNum">
+									<p>积分：20w</p>
+									<p>兑换数量：5</p>
+								</div>
+								<div class="haveRecord">已兑换</div>
+							</div>
+
+
+							<div class="recordGoodsDetail">
+								<img src="images/personalCenter/paid.png" alt="">
+								<div class="recordNum">
+									<p>积分：20w</p>
+									<p>兑换数量：5</p>
+								</div>
+								<div class="haveRecord">已兑换</div>
+							</div>
+					
+
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>

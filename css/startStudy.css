@@ -1,0 +1,625 @@
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	width:100%;
+	height:100%;
+    min-width: 900px;
+  
+}
+.content{
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:nowrap;
+}
+/* 左边视频播放 */
+.leftContent{
+	width:75%;
+	background:#808080;
+	/* height:780px; */
+}
+/* 顶部文字内容部分 */
+.selectCourse{
+	margin:25px 0 25px 20px;
+}
+.selectCourse dl dd{
+	list-style:none;
+	display:inline-block;
+	color:white;
+	font-size:14px;
+}
+/* 视频部分 */
+.playInfo{
+	margin:20px;
+	/* height:88%; */
+}
+.playInfo video{
+	width:100%;
+	/* height:100%; */
+	object-fit:fill;
+}
+
+.musicHidden{
+	display:none;
+	width:100%;
+}
+.musicBg{
+	display:none;
+/* 	height:96%; */
+	width:100%;
+}
+@media screen and (max-height: 1024px){
+	.leftContent{height:920px;}
+	.playInfo{height:100%;}
+	.playInfo video{height:90%;}
+	.musicBg{height:87%;}
+	.commentList{height:658px;}
+	.courseList{height:740px;}
+}
+@media screen and (max-height:800px){
+	.leftContent{height:780px;}
+	.playInfo{height:88%;}
+	.playInfo video{height:100%;}
+	.musicBg{height:96%;}
+	.commentList{height:460px;}
+	.courseList{height:560px;}
+}
+
+
+
+
+
+
+/* 右边课程相关信息 */
+.rightContent{
+	width:25%;
+	min-width:255px;
+}
+.courseName{
+	font-size:20px;
+	margin:20px 0 0 20px;
+}
+.courseInfo{
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:nowrap;
+	align-items:center;
+	padding: 5px 20px 20px 20px;
+    border-bottom: 1px solid #999999;
+    width:88%;
+}
+.coursePlayInfo{
+	display:flex;
+	justify-content:flex-start;
+	flex-wrap:nowrap;
+	align-items:center;
+	width:66%;
+}
+.coursePlayImg{
+	display:flex;
+}
+.coursePlayImg img{
+	width:13px;
+	height:13px;
+	margin-top:4px;
+}
+.coursePlayImg span{
+	display:inline-block;
+	font-size:12px;
+	color:#419fed;
+	margin:3px 3px 0 3px;
+}
+.coursePlayType{
+	font-size:12px;
+	border-left: 1px solid #999999;
+    line-height: 11px;
+    padding-left: 5px;
+    color:#999999;
+    margin-top:4px;
+    width:75%;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.colseCourse{
+	font-size:12px;
+	background: #419fed;
+	color:white;
+    border-radius: 50px;
+    width: 30%;
+    text-align: center;
+    padding: 3px;
+    /* margin-left: 50px; */
+    cursor:pointer;
+}
+/* 课件信息及评论 */
+.courseInfoAndComment{
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:nowrap;
+	align-items:center;
+	/* margin-top:20px; */
+	cursor:pointer;
+}
+.courseDetailInfo,.courseComment{
+	padding:10px 15px;
+	border-bottom:2px solid transparent;
+	font-size:15px;
+}
+.selectedItem{
+	color:#66c796;
+	border-bottom:2px solid #66c796;
+}
+
+
+/* 中间一小部分的蓝色背景 */
+.smallBg{
+	height:10px;
+	background-color:#f0f6fa;
+}
+/* 课程目录 */
+.courseCatalogDetail{
+	display:block;
+}
+.courseCatalogInfo{
+	padding: 18px 15px 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+.courseCatalog{
+	font-size:15px;
+	padding-left:5px;
+	line-height:14px;
+	border-left:2px solid dodgerblue;
+}
+.downloadAndLikes{
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:nowrap;
+	align-items:center;
+	font-size:12px;
+}
+.downloadInfo{
+	margin-right:15px;
+}
+.downloadInfo img{
+	width:20px;
+	height:20px;
+	vertical-align:sub;
+}
+.likesInfo img{
+	width:22px;
+	height:22px;
+	vertical-align:middle;
+}
+/* 课程目录列表 */
+.courseList{
+	/* height:600px; */
+	overflow:auto;
+}
+/* 2018.7.27章节添加学习进度  */
+.addStudyProgress{
+	border-bottom:1px solid lightgray;
+	
+}
+
+ .courseCatalogItem{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px 0px 15px;
+	
+} 
+.studyProgressedList,.studyProgressList,.studyProgressingList{
+	margin-left: 10%;
+    font-size: 13px;
+    width: 220px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+.studyProgressList span,.studyProgressedList span{
+	color:red;
+}
+
+.studyProgressingList span{
+	color:#0ec30e;
+}
+
+
+/* .courseCatalogItem{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	margin:18px 15px 15px 15px;
+	padding-bottom:18px;
+	border-bottom:1px solid lightgray;
+} */
+.courseCatalogTitle{
+	font-size:14px;
+	width:63%;
+	position:relative;
+	display:block;
+}
+.courseCatalogNum,.courseCatalogNum_hidden{
+	text-align:center;
+	width:20%;
+}
+.courseCatalogLest{
+	position:absolute;
+	left:20%;
+	top:0px;
+	width:80%;
+	height:20px;
+	line-height:20px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+/* .courseCatalogTitle_hidden{
+	display:none;
+	font-size:12px;
+	width:240px;
+	position:relative;
+}
+.courseCatalogAll{
+	position:absolute;
+	left:40px;
+	top:0px;
+	width:190px;
+	height:20px;
+} */
+
+
+.linkImg{
+	/* display:flex;
+	justify-content:space-between;
+	align-items:center; */
+	text-align:center;
+	width:37%;
+}
+.linkImg img{
+	display:inline-block;
+	margin-left: 3%;
+	cursor:pointer;
+}
+.moveImg{
+	width:22px;
+	height:17px;
+}
+.musicImg{
+	width:22px;
+	height:22px;
+}
+.pdfImg{
+	width:22px;
+	height:22px;
+}
+
+/* 评论内容 */
+.commentPart{
+	display:none;
+}
+.commentList{
+	/* height:600px; */
+	overflow:auto;
+}
+/* 还没有人评论 */
+.noComment{
+	text-align: center;
+    margin-top: 50px;
+    display:block;
+}
+.commentImg{
+	width: 120px;
+    height: 125px;
+}
+.commentBox{
+	border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    /* margin-top:70px; */
+}
+textarea{
+	resize:none;
+	overflow:hidden;
+	border-radius:8px;
+	margin-left: 30px;
+}
+.deliverComment{
+	font-size: 14px;
+    width: 100px;
+    /* border: 1px solid blue; */
+    margin: 0 auto;
+    background: #a6a6a6;
+    color: white;
+    border-radius: 5px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+.sendImg{
+	width:15px;
+	height:15px;
+	vertical-align:sub;
+	margin-left:3px;
+}
+/* 课件已经有人评论 */
+.haveComment{
+	display:none;
+	margin:10px;
+}
+/* 别人的评论 */
+.commenterContent{
+	display:flex;
+	justify-content:flex-start;
+	flex-wrap:nowrap;
+}
+
+.commenterContent img{
+	width:30px;
+	height:30px;
+	border-radius:30px;
+}
+.commenterInfo{
+	margin-left:15px;
+}
+.otherCommenter{
+	margin-bottom:20px;
+}
+.commenterN{
+	display:inline-block;
+    color: #666666;
+    width: 219px;
+    /* border: 0.01rem solid red; */
+}
+.commNa{
+	font-size:14px;
+}
+.commentTime{
+	font-size:12px;
+}
+.commenterBA{
+	font-size:12px;
+	color:#5b89bc;
+	cursor:pointer;
+}
+.commenterQue{
+	display:inline-block;
+	border: 1px solid #3f9dec;
+    padding: 2px 8px;
+    border-radius: 50px;
+    color:#3f9dec;
+    font-size:12px;
+}
+
+.commenterSay{
+	font-size:13px;
+	margin-top:10px;
+	word-break:break-word;
+}
+.backOther{
+	color:#f4915e;
+}
+/* 查看全部6条回复 */
+.checkHC{
+	display:block;
+	color:#999999;
+	margin-bottom:15px;
+	font-size:12px;
+}
+
+/* 自己的评论 */
+.myComment{
+	font-size:14px;
+	color:#666666;
+}
+.myC{
+	display:flex;
+}
+.myCCC{
+	margin-bottom: 15px;
+}
+.del{
+	color:#f07999;
+	font-size:12px;
+	cursor:pointer;
+}
+
+/* 分页器 */
+
+.pageBox{
+    text-align: center;
+    margin: 20px auto;
+    color: #999;
+    font-size: 12px;
+}
+.pageBox a{
+    float: none;
+    border: 1px solid #d5d5d5;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 5px;
+    display: inline-block;
+    cursor: pointer;
+    background: #fff;
+    text-decoration: none;
+    color: #333;
+    margin-right: 5px;
+}
+.pageBox a:hover{
+    /* border-color:blue; */
+    background-color:#00a1d6;
+    color:white;
+    text-decoration:none;
+}
+.pageBox .colorRed{
+    color: red;
+}
+.pageBox .gopage{
+    width: 36px;
+    height: 22px;
+    line-height: 22px;
+    color: #999;
+    text-align: center;
+    margin-left: 1px;
+    margin-right: 1px;
+    border: 1px solid #c3c3c3;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    outline: none;
+}
+.pageBox .curr{
+    background: none repeat scroll 0 0 #00a1d6;
+    color: #fff;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 5px;
+    z-index: 999;
+    margin-right: 5px;
+    display: inline-block;
+}
+.pageBox .disabled{
+    float: none;
+    display: inline-block;
+    padding: 0 9px;
+    margin-right: 5px;
+    border: 1px solid #d5d5d5;
+    background-color: #FFF;
+    color: #DFDFDF;
+    line-height: 20px;
+}
+.jumpPage{
+    width: 40px;
+    border-radius: 5px;
+    outline: none;
+}
+.jumpBtn{
+	background: transparent !important;
+    border: none !important;
+    width: 24px !important;
+    height: 24px !important;
+    line-height: 24px !important;
+}
+
+/* 删除自己的评论 */
+.deleteMyComment{
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	z-index:10000;
+
+	display:none;
+
+}
+.deleteBg{
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	background-color:#d9d9d9;
+	z-index:-10;
+	opacity:0.4;
+	width:100%;
+}
+.deleteTitle{
+	background: white;
+    margin: 0 auto;
+    text-align: center;
+    width: 300px;
+    height: 190px;
+    /* vertical-align: middle; */
+    margin-top: 250px;
+    border-radius:10px;
+}
+.deleCom{
+	padding-top: 20px;
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+.sureDele{
+	margin-top: 25px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.isDelete{
+	display: flex;
+    margin-top: 35px;
+    font-size: 18px;
+    border-top: 1px solid #e6e6e6;
+    padding-top: 20px;
+}
+.deleteY,.cancleD{
+	flex:1;
+	color:#68a4ff;
+	cursor:pointer;
+}
+/* 回复评论框 */
+.backBox{
+	position:fixed;
+	z-index:10000;
+	display:none;
+}
+.backBg{
+	position:fixed;
+	top:0;
+	left:75%;
+	bottom:0;
+	right:0;
+	background-color:#d9d9d9;
+	z-index:-10;
+	opacity:0.4;
+	width:100%;
+}
+.commentBackBox{
+	position: fixed;
+    left: 75%;
+    top: 80%;
+    background: white;
+    padding: 10px 0;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+/* 点击查看全部回复显示的内容 */
+.hiddenComment{
+	/* position: fixed;  */
+    position: absolute;
+    top: 140px;
+    left: 75.7%;
+    bottom: 0;
+    background-color: white;
+    width: 25.2%;
+    height: 800px;
+    display: none;
+    overflow: auto;
+}
+
+.detailC{
+	background-color:#f0f6fa;
+}
+.dc{
+	display:inline-block;
+	padding:12px 0 12px 30px;
+	font-size:15px;
+}
+.closeDetail{
+	margin-left:65%;
+	vertical-align:middle;
+	width:15px;
+	height:15px;
+}
+.relativeB{
+	margin-bottom: 20px;
+	font-size: 12px;
+	color:#999999;
+}

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />  
+	<title>已选课程</title>
+	<link rel="stylesheet" href="css/mySelectedCourse.css">
+	<link rel="stylesheet" href="css/bootstrap-3.3.7/dist/css/bootstrap.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/mySelectedCourse.js"></script>
+	<script src="js/search.js"></script>
+</head> 
+<body>
+	<!-- 顶部导航条、 -->
+	<div class="navs">
+		<div class="selectedDiv">
+			<div class="logoImgHidden">
+				<img src="images/logo_01.png" alt="">
+			</div>
+			<div class="selectedLi">
+				<ul>
+					<li  ><a href="index.html" class="firstPage ">首页</a></li>
+					<li ><a href="newPeople.html" class="newPeople">新员工培训</a></li>
+					<li ><a href="newPublicCourse.html" class="newPublicCourse">最新课程</a></li>
+					<li ><a href="mySelectedCourse.html" class="selectedCourse selectedColor">已选课程</a></li>
+					<li ><a href="onlineTest.html" class="onlineTest">在线考试</a></li>
+					<!-- <li class="courseContribute">课程投稿</li> -->
+					<li ><a href="studyMap.html" class="studyMap">学习地图</a></li>
+					<!-- <li class="moblieLogin">移动端登录</li> -->
+					<li ><a href="personalCenter.html" class="personalCenter">个人中心</a></li>
+
+					<li>
+						<a href="OperationalData.html" class="OperationalData">运营数据</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="loginerInfoHidden">
+					<div class="searchImg">
+						<!-- <img src="images/search.png" alt=""> -->
+						<button type="button" class="btn btn-search btn-success">
+						  <span class="glyphicon glyphicon-search" aria-hidden="true"></span> 搜索
+						</button>
+					</div>
+					<div class="bellHidden">
+						<img class="bellHiddenImg" src="images/bell.png" alt="">
+						<img class="starts" src="images/start.png" alt="">
+					</div>
+					<div class="loginerHiddenImg">
+						<img src="images/header.jpg" alt="">
+					</div>
+					<div class="loginerHiddenName">
+						<p>张三</p>
+						<p>JH015222</p>
+					</div>
+				</div>
+		</div>
+
+			<!-- 搜索框，不在页面显示，当点击搜索图标时，显示搜索框，且搜索图标隐藏-->
+		<div class="navSearch_hidden">
+			<div class="selectedDiv_block">
+				<div class="logoImgHidden">
+					<img src="images/logo_01.png" alt="">
+				</div>
+				<div class="selectedInput">
+					<input type="text" placeholder="请输入想要搜索的课程名或所属分类名称">
+						<button type="button" class="btn btn-success">
+						  <span class="glyphicon glyphicon-search" aria-hidden="true"></span> 搜索
+						</button>
+				</div>
+
+				<div class="loginerInfoHidden">
+						<div class="searchImgHidden">
+							<img src="images/search.png" alt="">
+						</div>
+						<div class="bellHidden">
+							<img class="bellHiddenImg" src="images/bell.png" alt="">
+							<img class="starts" src="images/start.png" alt="">
+						</div>
+						<div class="loginerHiddenImg">
+							<img src="images/header.jpg" alt="">
+						</div>
+						<div class="loginerHiddenName">
+							<p>张三</p>
+							<p>JH015222</p>
+						</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<!-- 内容部分 -->
+	<div class="bodyContent">
+		<div class="content">
+
+			<!-- 嘉华在线学院 -->
+
+			<div class="contentTopBg">
+				<img src="images/huawei/top.png" alt="">
+			</div>
+		<!-- 已选课程 -->
+			<div class="item">
+				
+				<div class="serviceType">
+					<div class="serviceType_title">
+						<p><b><a href="#">首页</a></b></p>
+						<img src="images/huawei/arrowRight.png" alt="">
+							<p><b><a href="#"><span>已选课程</span>(<span>15</span>)</a></b></p>
+					</div>
+					<div class="serviceType_content">
+						<span class="serviceType_contentItems">
+							<a href="#">必修课程</a>
+							<a href="#">选修课程</a>
+						</span>
+					</div>
+						
+				</div>
+				
+				<div class="serviceType_contentDetailItems">
+					<div class="serviceType_ItemsList">
+						<h5>
+							<a href="#"><b>必修课程</b>(<span>6</span>)</a>
+						</h5>
+						<dl>
+							<dd>
+								<a href="#"><span>已完成</span>(<span>1</span>)</a>
+								<a href="mySelectedDetailCourse.html"><span>未完成</span>(<span>5</span>)</a>
+								
+							</dd>
+						</dl>
+						
+					</div>
+
+
+					<div class="serviceType_ItemsList">
+						<h5>
+							<a href="#"><b>选修课程</b>(<span>9</span>)</a>
+						</h5>
+						<dl>
+							<dd>
+								<a href="#">已完成(<span>2</span>)</a>
+								<a href="#">未完成(<span>7</span>)</a>
+							</dd>
+						</dl>
+						
+					</div>
+
+
+					
+				</div>
+
+
+			</div>
+		<!-- 	<script>
+				$(".content > .item").hover(function(){
+					$(this).children('.serviceType_contentDetailItems').show();
+				},function(){
+					$(this).children('.serviceType_contentDetailItems').hide();
+				})
+			</script>
+	 -->
+	 		<!-- 已选课程内容 -->
+			
+			<div class="selectedCourseContent">
+
+				<!-- 必修课程 -->
+				<div class="courseContentItems1">
+					<div class="mustSelectCourse">
+						<!-- 必修课程图片 -->
+						<img src="images/mustSelectCourse.png" alt="">
+					</div>
+					<div class="courseContentImg">
+						<a href="courseDetail.html"><img src="images/newPublic/newPublic02.png" alt=""></a>
+					</div>
+					<div class="courseContentTitle">
+							<a href="courseDetail.html"><b>Excel应用技巧</b></a>
+					</div>
+					<div class="courseContentDetail">
+						<div class="courseContnetDetailImg">
+							<img src="images/time.png" alt=""> 
+						</div>
+						<div class="courseContentName" title="office课堂">
+								<span>02:11</span>
+								<p>office课堂</p>
+								
+						</div>
+						<div class="studyTime">已学<span>45</span>%</div>
+					</div>
+				</div>
+
+
+				<div class="courseContentItems1">
+					<div class="mustSelectCourse">
+						<!-- 必修课程图片 -->
+						<img src="images/mustSelectCourse.png" alt="">
+					</div>
+					<div class="courseContentImg">
+						<a href="courseDetail.html"><img src="images/newPublic/newPublic02.png" alt=""></a>
+					</div>
+					<div class="courseContentTitle">
+							<a href="courseDetail.html"><b>Excel应用技巧</b></a>
+					</div>
+					<div class="courseContentDetail">
+						<div class="courseContnetDetailImg">
+							<img src="images/time.png" alt=""> 
+						</div>
+						<div class="courseContentName" title="导师资格认证">
+								<span>1:02:11</span>
+								<p>导师资格认证</p>
+						</div>
+						<div class="studyTime">已学<span>45</span>%</div>
+					</div>
+				</div>
+
+
+				<div class="courseContentItems1">
+					<div class="mustSelectCourse">
+						<!-- 必修课程图片 -->
+						<img src="images/mustSelectCourse.png" alt="">
+					</div>
+					<div class="courseContentImg">
+						<a href="courseDetail.html"><img src="images/newPublic/newPublic02.png" alt=""></a>
+					</div>
+					<div class="courseContentTitle">
+							<a href="courseDetail.html"><b>Excel应用技巧</b></a>
+					</div>
+					<div class="courseContentDetail">
+						<div class="courseContnetDetailImg">
+							<img src="images/time.png" alt="">
+						</div>
+						<div class="courseContentName" title="office课堂">
+								<span>02:11</span>
+								<p>office课堂</p>
+						</div>
+						<div class="studyTime">已学<span>45</span>%</div>
+					</div>
+				</div>
+
+				<!-- 选修课程 -->
+				<div class="courseContentItems1">
+					<div class="courseContentImg">
+						<a href="courseDetail.html"><img src="images/newPublic/newPublic02.png" alt=""></a>
+					</div>
+					<div class="courseContentTitle">
+							<a href="courseDetail.html"><b>Excel应用技巧法大锅饭桑国德国代购</b></a>
+					</div>
+					<div class="courseContentDetail">
+						<div class="courseContnetDetailImg">
+							<img src="images/time.png" alt=""> 
+						</div>
+						<div class="courseContentName" title="office课堂">
+								<span>02:11</span>
+								<p>office课堂</p>
+						</div>
+						<div class="studyTime">已学<span>45</span>%</div>
+					</div>
+				</div>
+
+				<div class="courseContentItems1">
+					<div class="courseContentImg">
+						<a href="courseDetail.html"><img src="images/newPublic/newPublic02.png" alt=""></a>
+					</div>
+					<div class="courseContentTitle">
+							<a href="courseDetail.html"><b>Excel应用技巧</b></a>
+					</div>
+					<div class="courseContentDetail">
+						<div class="courseContnetDetailImg">
+							<img src="images/time.png" alt="">
+						</div>
+						<div class="courseContentName" title="导师资格认证">
+								<span>1:02:11</span>
+								<p>导师资格认证</p>
+						</div>
+						<div class="studyTime">已学<span>100</span>%</div>
+					</div>
+				</div>
+
+				<div class="courseContentItems1">
+					<div class="courseContentImg">
+						<a href="courseDetail.html"><img src="images/newPublic/newPublic02.png" alt=""></a>
+					</div>
+					<div class="courseContentTitle">
+							<a href="courseDetail.html"><b>Excel应用技巧</b></a>
+					</div>
+					<div class="courseContentDetail">
+						<div class="courseContnetDetailImg">
+							<img src="images/time.png" alt="">
+						</div>
+						<div class="courseContentName" title="导师资格认证">
+								<span>1:02:11</span>
+								<p>导师资格认证</p>
+						</div>
+						<div class="studyTime">已学<span>100</span>%</div>
+					</div>
+				</div>
+
+				<div class="courseContentItems1">
+					<div class="courseContentImg">
+						<a href="courseDetail.html"><img src="images/newPublic/newPublic02.png" alt=""></a>
+					</div>
+					<div class="courseContentTitle">
+							<a href="courseDetail.html"><b>Excel应用技巧</b></a>
+					</div>
+					<div class="courseContentDetail">
+						<div class="courseContnetDetailImg">
+							<img src="images/time.png" alt="">
+						</div>
+						<div class="courseContentName" title="office课堂">
+								<span>02:11</span>
+								<p>office课堂</p>
+						</div>
+						<div class="studyTime">已学<span>100</span>%</div>
+					</div>
+				</div>
+
+				<div class="courseContentItems1">
+					<div class="courseContentImg">
+						<a href="courseDetail.html"><img src="images/newPublic/newPublic02.png" alt=""></a>
+					</div>
+					<div class="courseContentTitle">
+							<a href="courseDetail.html"><b>Excel应用技巧</b></a>
+					</div>
+					<div class="courseContentDetail">
+						<div class="courseContnetDetailImg">
+							<img src="images/time.png" alt="">
+						</div>
+						<div class="courseContentName" title="导师资格认证">
+								<span>1:02:11</span>
+								<p>导师资格认证</p>
+						</div>
+						<div class="studyTime">已学<span>100</span>%</div>
+					</div>
+				</div>
+
+				<div class="courseContentItems1">
+					<div class="courseContentImg">
+						<a href="courseDetail.html"><img src="images/newPublic/newPublic02.png" alt=""></a>
+					</div>
+					<div class="courseContentTitle">
+							<a href="courseDetail.html"><b>Excel应用技巧</b></a>
+					</div>
+					<div class="courseContentDetail">
+						<div class="courseContnetDetailImg">
+							<img src="images/time.png" alt="">
+						</div>
+						<div class="courseContentName" title="导师资格认证">
+								<span>1:02:11</span>
+								<p>导师资格认证</p>
+						</div>
+						<div class="studyTime">已学<span>100</span>%</div>
+					</div>
+				</div>
+
+				
+
+				
+			</div>
+
+		</div>
+	</div>
+
+</body>
+</html>
